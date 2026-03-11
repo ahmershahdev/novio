@@ -54,7 +54,7 @@ $(function () {
       }
 
       var user = getCurrentUser();
-      if (user) {
+      try {
         var enrollments = JSON.parse(
           localStorage.getItem("novio_enrollments") || "[]",
         );
@@ -74,14 +74,16 @@ $(function () {
           }
         });
         localStorage.setItem("novio_enrollments", JSON.stringify(enrollments));
-      }
+      } catch (e) {}
 
-      localStorage.removeItem("novio_cart");
+      try {
+        localStorage.removeItem("novio_cart");
+      } catch (e) {}
       updateCartBadge();
       showToast("Payment successful! You are now enrolled.", "success");
 
       setTimeout(function () {
-        window.location.href = user ? "account.html" : "courses.html";
+        window.location.href = user ? "account.html" : "my-courses.html";
       }, 1500);
     });
   }

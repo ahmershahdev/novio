@@ -1,5 +1,4 @@
-﻿
-.hero {
+﻿.hero {
   padding: 140px 0 80px;
   background: linear-gradient(
     135deg,
@@ -73,25 +72,17 @@
 }
 
 .hero h1 .gradient-text {
-  background: linear-gradient(
-    135deg,
-    var(--primary) 0%,
-    var(--accent) 50%,
-    #ec4899 100%
-  );
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shimmerGradient 4s ease-in-out infinite;
-  border-right: 3px solid var(--primary);
+  color: var(--primary);
+  border-right: 2px solid var(--primary);
   padding-right: 4px;
-  animation:
-    shimmerGradient 4s ease-in-out infinite,
-    blink 0.7s steps(1) infinite;
+  animation: smoothBlink 1s ease-in-out infinite;
 }
 
-@keyframes blink {
+@keyframes smoothBlink {
+  0%,
+  100% {
+    border-color: var(--primary);
+  }
   50% {
     border-color: transparent;
   }
@@ -246,4 +237,3 @@
     transform: translateX(-50%);
   }
 }
-

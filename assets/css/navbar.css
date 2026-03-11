@@ -109,12 +109,17 @@
     gap: 0;
     order: 0;
     margin-right: auto;
+    margin-left: 48px;
   }
 
   .navbar-inner .d-flex.align-items-center.gap-2 {
     margin-left: 0;
     order: 2;
     flex-shrink: 0;
+  }
+
+  .mobile-menu-extras {
+    display: none;
   }
 }
 
@@ -154,6 +159,84 @@
     padding: 10px 14px !important;
     border-radius: var(--radius);
     font-size: 0.95rem;
+  }
+
+  .navbar-inner .navbar-nav .mega-dropdown {
+    display: none;
+  }
+
+  .mobile-menu-extras {
+    display: block;
+    padding: 16px 0;
+    border-top: 1px solid var(--border);
+    margin-bottom: 16px;
+  }
+
+  .mobile-menu-extras .mobile-quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .mobile-menu-extras .mobile-quick-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: var(--bg-light);
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    color: var(--text-secondary);
+    font-size: 0.82rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: var(--transition);
+  }
+
+  .mobile-menu-extras .mobile-quick-links a:hover {
+    background: var(--primary-light);
+    border-color: var(--primary);
+    color: var(--primary);
+  }
+
+  .mobile-menu-extras .mobile-quick-links a i {
+    font-size: 0.9rem;
+  }
+
+  .mobile-menu-section-title {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+  }
+
+  .mobile-social-links {
+    display: flex;
+    gap: 10px;
+  }
+
+  .mobile-social-links a {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--bg-light);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 1rem;
+    text-decoration: none;
+    transition: var(--transition);
+  }
+
+  .mobile-social-links a:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
   }
 
   .navbar-inner .mega-dropdown .mega-menu {

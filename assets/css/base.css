@@ -97,3 +97,80 @@ h6 {
   margin: 0 auto 48px;
 }
 
+/* Premium Buttons */
+.btn {
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 10px 24px;
+  font-size: 0.9rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-sm {
+  padding: 7px 18px;
+  font-size: 0.82rem;
+}
+
+.btn-lg {
+  padding: 14px 32px;
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  border: none;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(79, 70, 229, 0.4);
+  background: linear-gradient(
+    135deg,
+    var(--primary-hover) 0%,
+    var(--primary) 100%
+  );
+  color: #fff;
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
+}
+
+.btn-outline-primary {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  background: transparent;
+  font-weight: 600;
+}
+
+.btn-outline-primary:hover {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(79, 70, 229, 0.3);
+}
+
+.btn-outline-primary:active {
+  transform: translateY(0);
+}
+
+/* Premium Links */
+a:not(.btn):not(.nav-link):not(.navbar-brand):not(.navbar-brand-logo):not(
+    .dropdown-item
+  ):not(.dropdown-toggle) {
+  transition: all 0.25s ease;
+}
+
+a:not(.btn):not(.nav-link):not(.navbar-brand):not(.navbar-brand-logo):not(
+    .dropdown-item
+  ):not(.dropdown-toggle):hover {
+  color: var(--primary-hover);
+  opacity: 0.9;
+}

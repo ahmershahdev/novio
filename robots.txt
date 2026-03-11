@@ -1,4 +1,17 @@
 User-agent: *
 Allow: /
+Disallow: /assets/js/
+Disallow: /googlefd88f5d13cd71b69.html
+
+User-agent: Googlebot
+Allow: /
+Disallow: /assets/js/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /assets/js/
 
 Sitemap: https://ahmershahdev.github.io/novio/sitemap.xml
+
+# Novio - Premium Online Tech Courses
+# https://ahmershahdev.github.io/novio/

@@ -58,7 +58,7 @@ $(function () {
       if (typingIndex <= trustedText.length) {
         $typing.text(trustedText.substring(0, typingIndex));
         typingIndex++;
-        setTimeout(typeText, 60);
+        setTimeout(typeText, 90);
       }
     }
 
@@ -100,9 +100,9 @@ $(function () {
         if (charIdx <= line.length) {
           $career.text(line.substring(0, charIdx));
           charIdx++;
-          setTimeout(typeChar, 50);
+          setTimeout(typeChar, 100);
         } else {
-          setTimeout(eraseChar, 2000);
+          setTimeout(eraseChar, 2500);
         }
       }
 
@@ -110,10 +110,10 @@ $(function () {
         var current = $career.text();
         if (current.length > 0) {
           $career.text(current.substring(0, current.length - 1));
-          setTimeout(eraseChar, 30);
+          setTimeout(eraseChar, 50);
         } else {
           careerIdx = (careerIdx + 1) % careerLines.length;
-          setTimeout(typeCareerLine, 400);
+          setTimeout(typeCareerLine, 600);
         }
       }
 

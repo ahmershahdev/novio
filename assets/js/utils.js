@@ -1,14 +1,24 @@
 ﻿function getCurrentUser() {
-  var userData = localStorage.getItem("novio_user");
-  return userData ? JSON.parse(userData) : null;
+  try {
+    var userData = localStorage.getItem("novio_user");
+    return userData ? JSON.parse(userData) : null;
+  } catch (e) {
+    return null;
+  }
 }
 
 function setCurrentUser(user) {
-  localStorage.setItem("novio_user", JSON.stringify(user));
+  try {
+    localStorage.setItem("novio_user", JSON.stringify(user));
+  } catch (e) {
+    showToast("Could not save user data", "error");
+  }
 }
 
 function logoutUser() {
-  localStorage.removeItem("novio_user");
+  try {
+    localStorage.removeItem("novio_user");
+  } catch (e) {}
   showToast("Logged out successfully", "success");
   setTimeout(function () {
     window.location.href = "index.html";
@@ -62,12 +72,20 @@ function showToast(message, type) {
 }
 
 function getCart() {
-  var cart = localStorage.getItem("novio_cart");
-  return cart ? JSON.parse(cart) : [];
+  try {
+    var cart = localStorage.getItem("novio_cart");
+    return cart ? JSON.parse(cart) : [];
+  } catch (e) {
+    return [];
+  }
 }
 
 function saveCart(cart) {
-  localStorage.setItem("novio_cart", JSON.stringify(cart));
+  try {
+    localStorage.setItem("novio_cart", JSON.stringify(cart));
+  } catch (e) {
+    showToast("Could not save cart data", "error");
+  }
   updateCartBadge();
 }
 

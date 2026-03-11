@@ -11,8 +11,7 @@
   var fullStars = Math.floor(course.rating);
   for (var i = 0; i < fullStars; i++)
     starsHtml += '<i class="bi bi-star-fill"></i>';
-  if (course.rating % 1 >= 0.5)
-    starsHtml += '<i class="bi bi-star-half"></i>';
+  if (course.rating % 1 >= 0.5) starsHtml += '<i class="bi bi-star-half"></i>';
 
   return (
     '<div class="col-lg-4 col-md-6 mb-4">' +
@@ -188,8 +187,7 @@ function filterCourses() {
       selectedCategories.indexOf(course.category) > -1;
 
     var matchLevel =
-      selectedLevels.length === 0 ||
-      selectedLevels.indexOf(course.level) > -1;
+      selectedLevels.length === 0 || selectedLevels.indexOf(course.level) > -1;
 
     var matchPrice =
       selectedPrices.length === 0 ||
@@ -213,13 +211,21 @@ function filterCourses() {
 
   var sortVal = $("#sortSelect").val();
   if (sortVal === "price-low") {
-    filtered.sort(function (a, b) { return a.price - b.price; });
+    filtered.sort(function (a, b) {
+      return a.price - b.price;
+    });
   } else if (sortVal === "price-high") {
-    filtered.sort(function (a, b) { return b.price - a.price; });
+    filtered.sort(function (a, b) {
+      return b.price - a.price;
+    });
   } else if (sortVal === "rating") {
-    filtered.sort(function (a, b) { return b.rating - a.rating; });
+    filtered.sort(function (a, b) {
+      return b.rating - a.rating;
+    });
   } else if (sortVal === "popular") {
-    filtered.sort(function (a, b) { return b.students - a.students; });
+    filtered.sort(function (a, b) {
+      return b.students - a.students;
+    });
   }
 
   renderAllCourses(filtered);
@@ -347,6 +353,19 @@ $(function () {
     $(".filter-check").prop("checked", false);
     $("#courseSearch").val("");
     $("#sortSelect").val("default");
+    $(".category-chip").removeClass("active");
+    $(".category-chip[data-category='all']").addClass("active");
+    filterCourses();
+  });
+
+  $(".category-chip").on("click", function () {
+    $(".category-chip").removeClass("active");
+    $(this).addClass("active");
+    var cat = $(this).data("category");
+    $(".filter-category").prop("checked", false);
+    if (cat !== "all") {
+      $(".filter-category[value='" + cat + "']").prop("checked", true);
+    }
     filterCourses();
   });
 });

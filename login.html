@@ -1,23 +1,23 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Log in to your Novio account and continue learning tech skills.">
+    <meta name="description" content="Log in to your Novio account to access your courses, track progress, and continue learning.">
     <meta name="robots" content="noindex, nofollow">
     <meta name="author" content="Syed Ahmer Shah">
-    <meta property="og:title" content="Log In | Novio">
-    <meta property="og:description" content="Log in to your Novio account to access your courses.">
+    <meta property="og:title" content="Log In | NOVIO">
+    <meta property="og:description" content="Access your Novio account and continue learning.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ahmershahdev.github.io/novio/login.html">
     <meta property="og:site_name" content="Novio">
     <meta property="og:image" content="https://ahmershahdev.github.io/novio/assets/images/og-image.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Log In | Novio">
-    <meta name="twitter:description" content="Log in to your Novio account to access your courses.">
+    <meta name="twitter:title" content="Log In | NOVIO">
+    <meta name="twitter:description" content="Access your Novio account and continue learning.">
     <link rel="canonical" href="https://ahmershahdev.github.io/novio/login.html">
-    <title>Log In | NOVIO</title>
+    <title>Log In to Your Account | NOVIO</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -29,15 +29,21 @@
     <link rel="stylesheet" href="assets/css/hero.css">
     <link rel="stylesheet" href="assets/css/courses.css">
     <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="assets/css/pages-auth.css">
+    <link rel="stylesheet" href="assets/css/pages-browse.css">
+    <link rel="stylesheet" href="assets/css/pages-legal.css">
+    <link rel="stylesheet" href="assets/css/pages-course.css">
+    <link rel="stylesheet" href="assets/css/pages-account.css">
     <link rel="stylesheet" href="assets/css/animations.css">
-    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/layout-search.css">
+    <link rel="stylesheet" href="assets/css/layout-footer.css">
+    <link rel="stylesheet" href="assets/css/layout-menus.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top" role="navigation" aria-label="Main navigation">
         <div class="container">
             <a class="navbar-brand-logo" href="index.html">
                 <img src="assets/images/logo/novio-logo.png" alt="Novio" class="logo-img">
@@ -49,7 +55,7 @@
             <div class="collapse navbar-collapse" id="mobileNav"><div class="navbar-inner">
                     <div class="navbar-search">
                         <i class="bi bi-search search-icon"></i>
-                        <input type="text" class="search-input" placeholder="Search courses...">
+                        <input type="text" class="search-input" placeholder="Search courses..." aria-label="Search courses" role="searchbox">
                         <div class="nav-search-suggestions"></div>
                     </div>
                     <ul class="navbar-nav">
@@ -114,6 +120,27 @@
                             </div>
                         </li>
                     </ul>
+                    <div class="mobile-menu-extras">
+                        <p class="mobile-menu-section-title">Quick Links</p>
+                        <div class="mobile-quick-links">
+                            <a href="about.html"><i class="bi bi-info-circle"></i> About</a>
+                            <a href="blog.html"><i class="bi bi-journal-text"></i> Blog</a>
+                            <a href="careers.html"><i class="bi bi-briefcase"></i> Careers</a>
+                            <a href="help-center.html"><i class="bi bi-question-circle"></i> Help</a>
+                            <a href="catalog.html"><i class="bi bi-grid"></i> Catalog</a>
+                            <a href="novio-plus.html"><i class="bi bi-stars"></i> Novio Plus</a>
+                            <a href="podcast.html"><i class="bi bi-mic"></i> Podcast</a>
+                            <a href="contact.html"><i class="bi bi-envelope"></i> Contact</a>
+                        </div>
+                        <p class="mobile-menu-section-title">Follow Us</p>
+                        <div class="mobile-social-links">
+                            <a href="https://facebook.com/ahmershah29" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="https://x.com/ahmershah29" target="_blank" rel="noopener" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                            <a href="https://linkedin.com/in/syedahmershah" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/ahmershahdev" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                            <a href="https://youtube.com/@ahmershahdev" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
                     <div class="d-flex align-items-center gap-2">
                         <a href="cart.html" class="btn btn-icon position-relative" aria-label="Cart">
                             <i class="bi bi-cart3"></i>
@@ -159,16 +186,15 @@
             <h2 class="auth-title">Welcome Back</h2>
             <p class="auth-subtitle">Log in to continue your learning journey</p>
 
-            <form id="loginForm" novalidate>
+            <form id="loginForm" novalidate role="form" aria-label="Login form">
                 <div class="mb-3">
                     <label class="form-label" for="loginEmail">Email Address</label>
-                    <input type="email" class="form-control" id="loginEmail" placeholder="you@example.com" required>
+                    <input type="email" class="form-control" id="loginEmail" placeholder="you@example.com" required aria-required="true" aria-describedby="loginEmailHelp" autocomplete="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                 </div>
                 <div class="mb-3">
                     <label class="form-label" for="loginPassword">Password</label>
                     <div class="input-group">
-                        <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password"
-                            required minlength="8">
+                        <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password" required minlength="8" maxlength="128" aria-required="true" autocomplete="current-password">
                         <button class="btn btn-toggle-password" type="button" aria-label="Toggle password visibility">
                             <i class="bi bi-eye"></i>
                         </button>
@@ -190,18 +216,18 @@
         </div>
     </section>
 
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/data.js"></script>
-    <script src="assets/js/utils.js"></script>
-    <script src="assets/js/ui.js"></script>
-    <script src="assets/js/courses.js"></script>
-    <script src="assets/js/course-detail.js"></script>
-    <script src="assets/js/cart-page.js"></script>
-    <script src="assets/js/auth-forms.js"></script>
-    <script src="assets/js/account.js"></script>
-    <script src="assets/js/animations.js"></script>
-    <script src="assets/js/nav-search.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js" defer></script>
+    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/js/data.js" defer></script>
+    <script src="assets/js/utils.js" defer></script>
+    <script src="assets/js/ui.js" defer></script>
+    <script src="assets/js/courses.js" defer></script>
+    <script src="assets/js/course-detail.js" defer></script>
+    <script src="assets/js/cart-page.js" defer></script>
+    <script src="assets/js/auth-forms.js" defer></script>
+    <script src="assets/js/account.js" defer></script>
+    <script src="assets/js/animations.js" defer></script>
+    <script src="assets/js/nav-search.js" defer></script>
 
     <script type="application/ld+json">
     {

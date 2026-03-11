@@ -9,6 +9,12 @@ $(function () {
       return;
     }
 
+    var emailRegex = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/;
+    if (!emailRegex.test(email)) {
+      showToast("Please enter a valid email address", "error");
+      return;
+    }
+
     var users = JSON.parse(localStorage.getItem("novio_users") || "[]");
     var user = users.find(function (u) {
       return u.email === email && u.password === password;
@@ -75,6 +81,12 @@ $(function () {
 
     if (!name || !email || !password || !confirmPassword) {
       showToast("Please fill in all fields", "error");
+      return;
+    }
+
+    var emailRegex = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/;
+    if (!emailRegex.test(email)) {
+      showToast("Please enter a valid email address", "error");
       return;
     }
 

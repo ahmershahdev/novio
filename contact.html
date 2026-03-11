@@ -1,25 +1,25 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Get in touch with the Novio team. We'd love to hear from you about courses, partnerships, or support.">
+        content="Have questions? Contact the Novio team. We''re here to help with course inquiries, partnerships, and support.">
     <meta name="keywords" content="contact Novio, support, help, tech courses, online learning">
     <meta name="author" content="Syed Ahmer Shah">
-    <meta property="og:title" content="Contact Us | Novio">
-    <meta property="og:description" content="Reach out to our team for support, partnerships, or feedback.">
+    <meta property="og:title" content="Contact NOVIO - We''re Here to Help">
+    <meta property="og:description" content="Reach out to the Novio team for course inquiries, partnerships, technical support, and more.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ahmershahdev.github.io/novio/contact.html">
     <meta property="og:site_name" content="Novio">
     <meta property="og:image" content="https://ahmershahdev.github.io/novio/assets/images/og-image.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Contact Us | Novio">
-    <meta name="twitter:description" content="Reach out to our team for support, partnerships, or feedback.">
+    <meta name="twitter:title" content="Contact NOVIO - We''re Here to Help">
+    <meta name="twitter:description" content="Reach out to the Novio team for course inquiries, partnerships, technical support, and more.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://ahmershahdev.github.io/novio/contact.html">
-    <title>Contact Us | NOVIO</title>
+    <title>Contact Us - Get in Touch | NOVIO</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -31,15 +31,21 @@
     <link rel="stylesheet" href="assets/css/hero.css">
     <link rel="stylesheet" href="assets/css/courses.css">
     <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="assets/css/pages-auth.css">
+    <link rel="stylesheet" href="assets/css/pages-browse.css">
+    <link rel="stylesheet" href="assets/css/pages-legal.css">
+    <link rel="stylesheet" href="assets/css/pages-course.css">
+    <link rel="stylesheet" href="assets/css/pages-account.css">
     <link rel="stylesheet" href="assets/css/animations.css">
-    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/layout-search.css">
+    <link rel="stylesheet" href="assets/css/layout-footer.css">
+    <link rel="stylesheet" href="assets/css/layout-menus.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top" role="navigation" aria-label="Main navigation">
         <div class="container">
             <a class="navbar-brand-logo" href="index.html">
                 <img src="assets/images/logo/novio-logo.png" alt="Novio" class="logo-img">
@@ -52,7 +58,7 @@
                 <div class="navbar-inner">
                     <div class="navbar-search">
                         <i class="bi bi-search search-icon"></i>
-                        <input type="text" class="search-input" placeholder="Search courses...">
+                        <input type="text" class="search-input" placeholder="Search courses..." aria-label="Search courses" role="searchbox">
                         <div class="nav-search-suggestions"></div>
                     </div>
                     <ul class="navbar-nav">
@@ -120,6 +126,27 @@
                             </div>
                         </li>
                     </ul>
+                    <div class="mobile-menu-extras">
+                        <p class="mobile-menu-section-title">Quick Links</p>
+                        <div class="mobile-quick-links">
+                            <a href="about.html"><i class="bi bi-info-circle"></i> About</a>
+                            <a href="blog.html"><i class="bi bi-journal-text"></i> Blog</a>
+                            <a href="careers.html"><i class="bi bi-briefcase"></i> Careers</a>
+                            <a href="help-center.html"><i class="bi bi-question-circle"></i> Help</a>
+                            <a href="catalog.html"><i class="bi bi-grid"></i> Catalog</a>
+                            <a href="novio-plus.html"><i class="bi bi-stars"></i> Novio Plus</a>
+                            <a href="podcast.html"><i class="bi bi-mic"></i> Podcast</a>
+                            <a href="contact.html"><i class="bi bi-envelope"></i> Contact</a>
+                        </div>
+                        <p class="mobile-menu-section-title">Follow Us</p>
+                        <div class="mobile-social-links">
+                            <a href="https://facebook.com/ahmershah29" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="https://x.com/ahmershah29" target="_blank" rel="noopener" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                            <a href="https://linkedin.com/in/syedahmershah" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/ahmershahdev" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                            <a href="https://youtube.com/@ahmershahdev" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
                     <div class="d-flex align-items-center gap-2">
                         <a href="cart.html" class="btn btn-icon position-relative" aria-label="Cart">
                             <i class="bi bi-cart3"></i>
@@ -224,13 +251,13 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="floating-label-group">
-                                        <input type="tel" class="form-control" id="contactPhone" placeholder=" ">
+                                        <input type="tel" class="form-control" id="contactPhone" placeholder=" " autocomplete="tel" pattern="[\+]?[0-9\s\-]{7,20}" maxlength="20">
                                         <label for="contactPhone">Phone Number</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="floating-label-group">
-                                        <select class="form-select" id="contactSubject">
+                                        <select class="form-select" id="contactSubject" aria-label="Select subject">
                                             <option value="">Select a topic</option>
                                             <option value="general">General Inquiry</option>
                                             <option value="support">Technical Support</option>
@@ -350,7 +377,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo" aria-label="Site footer">
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6">
@@ -413,8 +440,8 @@
                 <div class="col-lg-3 col-md-6">
                     <h6>Newsletter</h6>
                     <p>Stay updated with new courses and exclusive offers.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Enter your email" required>
+                    <form class="newsletter-form" aria-label="Newsletter subscription">
+                        <input type="email" placeholder="Enter your email" required aria-label="Email for newsletter" autocomplete="email">
                         <button type="submit" aria-label="Subscribe"><i class="bi bi-arrow-right"></i></button>
                     </form>
                 </div>
@@ -429,18 +456,18 @@
 
     <button class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
 
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/data.js"></script>
-    <script src="assets/js/utils.js"></script>
-    <script src="assets/js/ui.js"></script>
-    <script src="assets/js/courses.js"></script>
-    <script src="assets/js/course-detail.js"></script>
-    <script src="assets/js/cart-page.js"></script>
-    <script src="assets/js/auth-forms.js"></script>
-    <script src="assets/js/account.js"></script>
-    <script src="assets/js/animations.js"></script>
-    <script src="assets/js/nav-search.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js" defer></script>
+    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/js/data.js" defer></script>
+    <script src="assets/js/utils.js" defer></script>
+    <script src="assets/js/ui.js" defer></script>
+    <script src="assets/js/courses.js" defer></script>
+    <script src="assets/js/course-detail.js" defer></script>
+    <script src="assets/js/cart-page.js" defer></script>
+    <script src="assets/js/auth-forms.js" defer></script>
+    <script src="assets/js/account.js" defer></script>
+    <script src="assets/js/animations.js" defer></script>
+    <script src="assets/js/nav-search.js" defer></script>
 
     <script type="application/ld+json">
     {

@@ -44,6 +44,10 @@ $(function () {
     $("#profileImageInput").on("change", function () {
       var file = this.files[0];
       if (!file) return;
+      if (!file.type.startsWith("image/")) {
+        showToast("Please select a valid image file", "error");
+        return;
+      }
       if (file.size > 2 * 1024 * 1024) {
         showToast("Image must be under 2MB", "error");
         return;
@@ -68,6 +72,15 @@ $(function () {
     $("#resumeUpload").on("change", function () {
       var file = this.files[0];
       if (!file) return;
+      var allowedTypes = [
+        "application/pdf",
+        "application/msword",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      ];
+      if (allowedTypes.indexOf(file.type) === -1) {
+        showToast("Please upload a PDF or Word document", "error");
+        return;
+      }
       if (file.size > 5 * 1024 * 1024) {
         showToast("Resume must be under 5MB", "error");
         return;
@@ -209,9 +222,10 @@ $(function () {
           "</div>",
       );
     }
-
-    $("#logoutBtn").on("click", function () {
-      logoutUser();
-    });
   }
+
+  $(document).on("click", "#logoutBtn", function (e) {
+    e.preventDefault();
+    logoutUser();
+  });
 });

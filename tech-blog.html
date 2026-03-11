@@ -1,12 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Novio Tech Blog - tutorials, guides, and insights from our engineering team.">
+    <meta name="description" content="Deep dives into technology, engineering practices, and behind-the-scenes at Novio. Written by our engineering team.">
     <meta name="author" content="Syed Ahmer Shah">
-    <title>Tech Blog | NOVIO</title>
+    <title>Tech Blog - Engineering Insights | NOVIO</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -18,15 +18,21 @@
     <link rel="stylesheet" href="assets/css/hero.css">
     <link rel="stylesheet" href="assets/css/courses.css">
     <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="assets/css/pages-auth.css">
+    <link rel="stylesheet" href="assets/css/pages-browse.css">
+    <link rel="stylesheet" href="assets/css/pages-legal.css">
+    <link rel="stylesheet" href="assets/css/pages-course.css">
+    <link rel="stylesheet" href="assets/css/pages-account.css">
     <link rel="stylesheet" href="assets/css/animations.css">
-    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/layout-search.css">
+    <link rel="stylesheet" href="assets/css/layout-footer.css">
+    <link rel="stylesheet" href="assets/css/layout-menus.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top" role="navigation" aria-label="Main navigation">
         <div class="container">
             <a class="navbar-brand-logo" href="index.html"><img src="assets/images/logo/novio-logo.png" alt="Novio"
                     class="logo-img"></a>
@@ -103,7 +109,27 @@
                                 </div>
                             </div>
                         </li>
-                    </ul>
+                    <div class="mobile-menu-extras">
+                        <p class="mobile-menu-section-title">Quick Links</p>
+                        <div class="mobile-quick-links">
+                            <a href="about.html"><i class="bi bi-info-circle"></i> About</a>
+                            <a href="blog.html"><i class="bi bi-journal-text"></i> Blog</a>
+                            <a href="careers.html"><i class="bi bi-briefcase"></i> Careers</a>
+                            <a href="help-center.html"><i class="bi bi-question-circle"></i> Help</a>
+                            <a href="catalog.html"><i class="bi bi-grid"></i> Catalog</a>
+                            <a href="novio-plus.html"><i class="bi bi-stars"></i> Novio Plus</a>
+                            <a href="podcast.html"><i class="bi bi-mic"></i> Podcast</a>
+                            <a href="contact.html"><i class="bi bi-envelope"></i> Contact</a>
+                        </div>
+                        <p class="mobile-menu-section-title">Follow Us</p>
+                        <div class="mobile-social-links">
+                            <a href="https://facebook.com/ahmershah29" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="https://x.com/ahmershah29" target="_blank" rel="noopener" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                            <a href="https://linkedin.com/in/syedahmershah" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/ahmershahdev" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                            <a href="https://youtube.com/@ahmershahdev" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
                     <div class="d-flex align-items-center gap-2">
                         <a href="cart.html" class="btn btn-icon position-relative" aria-label="Cart"><i
                                 class="bi bi-cart3"></i><span class="cart-badge badge" data-count="0">0</span></a>
@@ -227,7 +253,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo" aria-label="Site footer">
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6">
@@ -288,7 +314,7 @@
                 <div class="col-lg-3 col-md-6">
                     <h6>Newsletter</h6>
                     <p>Stay updated with new courses and exclusive offers.</p>
-                    <form class="newsletter-form"><input type="email" placeholder="Enter your email" required><button
+                    <form class="newsletter-form" aria-label="Newsletter subscription"><input type="email" placeholder="Enter your email" required aria-label="Email for newsletter" autocomplete="email"><button
                             type="submit" aria-label="Subscribe"><i class="bi bi-arrow-right"></i></button></form>
                 </div>
             </div>
@@ -301,18 +327,22 @@
     </footer>
 
     <button class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/data.js"></script>
-    <script src="assets/js/utils.js"></script>
-    <script src="assets/js/ui.js"></script>
-    <script src="assets/js/courses.js"></script>
-    <script src="assets/js/course-detail.js"></script>
-    <script src="assets/js/cart-page.js"></script>
-    <script src="assets/js/auth-forms.js"></script>
-    <script src="assets/js/account.js"></script>
-    <script src="assets/js/animations.js"></script>
-    <script src="assets/js/nav-search.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js" defer></script>
+    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/js/data.js" defer></script>
+    <script src="assets/js/utils.js" defer></script>
+    <script src="assets/js/ui.js" defer></script>
+    <script src="assets/js/courses.js" defer></script>
+    <script src="assets/js/course-detail.js" defer></script>
+    <script src="assets/js/cart-page.js" defer></script>
+    <script src="assets/js/auth-forms.js" defer></script>
+    <script src="assets/js/account.js" defer></script>
+    <script src="assets/js/animations.js" defer></script>
+    <script src="assets/js/nav-search.js" defer></script>
+
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Blog","name":"Novio Tech Blog","url":"https://ahmershahdev.github.io/novio/tech-blog.html","description":"Engineering insights and technical articles"}
+    </script>
 </body>
 
 </html>
