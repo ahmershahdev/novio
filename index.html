@@ -1,51 +1,126 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Novio - Premium online tech courses. Learn web development, data science, AI, cybersecurity and more from industry experts.">
+        content="NOVIO - Premium online tech courses. Learn web development, data science, AI, cybersecurity and more from industry experts.">
     <meta name="keywords"
         content="online courses, tech courses, web development, data science, machine learning, programming, coding bootcamp">
-    <meta name="author" content="Novio">
-    <meta property="og:title" content="Novio - Learn Tech Skills Online">
+    <meta name="author" content="Syed Ahmer Shah">
+    <meta property="og:title" content="NOVIO - Learn Tech Skills Online">
     <meta property="og:description"
         content="Premium online courses to advance your tech career. Learn from industry experts.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ahmershahdev.github.io/novio/">
+    <meta property="og:site_name" content="NOVIO">
+    <meta property="og:image" content="https://ahmershahdev.github.io/novio/assets/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NOVIO - Learn Tech Skills Online">
+    <meta name="twitter:description" content="Premium online courses to advance your tech career.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://novio.com/">
-    <title>Novio - Learn Tech Skills Online</title>
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    <link rel="canonical" href="https://ahmershahdev.github.io/novio/">
+    <title>NOVIO - Learn Tech Skills Online</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="assets/css/courses.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
 
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Novio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas"
-                aria-label="Toggle navigation">
+            <a class="navbar-brand-logo" href="index.html">
+                <img src="assets/images/logo/novio-logo.png" alt="Novio" class="logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav"
+                aria-controls="mobileNav" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title">Novio</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav ms-auto me-3">
+            <div class="collapse navbar-collapse" id="mobileNav">
+                <div class="navbar-inner">
+                    <div class="navbar-search">
+                        <i class="bi bi-search search-icon"></i>
+                        <input type="text" class="search-input" placeholder="Search courses...">
+                        <div class="nav-search-suggestions"></div>
+                    </div>
+                    <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item dropdown mega-dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Explore</a>
+                            <div class="dropdown-menu mega-menu">
+                                <div class="container">
+                                    <div class="row g-4 p-3">
+                                        <div class="col-lg-3 col-md-6">
+                                            <h6 class="mega-menu-title"><i class="bi bi-fire"></i> Popular Categories
+                                            </h6>
+                                            <ul class="mega-menu-list">
+                                                <li><a href="courses.html"><i class="bi bi-code-slash"></i> Web
+                                                        Development</a></li>
+                                                <li><a href="courses.html"><i class="bi bi-graph-up"></i> Data
+                                                        Science</a></li>
+                                                <li><a href="courses.html"><i class="bi bi-robot"></i> Artificial
+                                                        Intelligence</a></li>
+                                                <li><a href="courses.html"><i class="bi bi-shield-lock"></i>
+                                                        Cybersecurity</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <h6 class="mega-menu-title"><i class="bi bi-signpost-split"></i> Learning
+                                                Paths</h6>
+                                            <ul class="mega-menu-list">
+                                                <li><a href="courses.html"><i class="bi bi-cloud"></i> Cloud
+                                                        Computing</a></li>
+                                                <li><a href="courses.html"><i class="bi bi-phone"></i> Mobile
+                                                        Development</a></li>
+                                                <li><a href="courses.html"><i class="bi bi-palette"></i> UI/UX
+                                                        Design</a></li>
+                                                <li><a href="courses.html"><i class="bi bi-gear"></i> DevOps</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <h6 class="mega-menu-title"><i class="bi bi-building"></i> Company</h6>
+                                            <ul class="mega-menu-list">
+                                                <li><a href="about.html"><i class="bi bi-info-circle"></i> About
+                                                        Novio</a></li>
+                                                <li><a href="contact.html"><i class="bi bi-envelope"></i> Contact Us</a>
+                                                </li>
+                                                <li><a href="careers.html"><i class="bi bi-briefcase"></i> Careers</a>
+                                                </li>
+                                                <li><a href="blog.html"><i class="bi bi-journal-text"></i> Blog</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <h6 class="mega-menu-title"><i class="bi bi-box"></i> Resources</h6>
+                                            <ul class="mega-menu-list">
+                                                <li><a href="novio-plus.html"><i class="bi bi-stars"></i> Novio Plus</a>
+                                                </li>
+                                                <li><a href="catalog.html"><i class="bi bi-grid"></i> Catalog</a></li>
+                                                <li><a href="affiliates.html"><i class="bi bi-people"></i>
+                                                        Affiliates</a></li>
+                                                <li><a href="help-center.html"><i class="bi bi-question-circle"></i>
+                                                        Help Center</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                     <div class="d-flex align-items-center gap-2">
                         <a href="cart.html" class="btn btn-icon position-relative" aria-label="Cart">
@@ -54,16 +129,39 @@
                         </a>
                         <a href="login.html" class="btn btn-outline-primary btn-sm" id="loginBtn">Log In</a>
                         <a href="signup.html" class="btn btn-primary btn-sm" id="signupBtn">Sign Up</a>
-                        <a href="account.html" class="btn btn-icon d-none" id="accountBtn" aria-label="Account">
-                            <i class="bi bi-person-circle"></i>
-                        </a>
+                        <div class="dropdown d-none" id="accountDropdown">
+                            <a href="#" class="btn btn-icon dropdown-toggle" id="accountBtn" data-bs-toggle="dropdown"
+                                aria-expanded="false" aria-label="Account">
+                                <i class="bi bi-person-circle"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end account-dropdown">
+                                <li><a class="dropdown-item" href="account.html"><i class="bi bi-person"></i>
+                                        Profile</a></li>
+                                <li><a class="dropdown-item" href="my-courses.html"><i class="bi bi-book"></i> My
+                                        Courses</a></li>
+                                <li><a class="dropdown-item" href="purchases.html"><i class="bi bi-bag"></i> My
+                                        Purchases</a></li>
+                                <li><a class="dropdown-item" href="achievements.html"><i class="bi bi-trophy"></i>
+                                        Accomplishments</a></li>
+                                <li><a class="dropdown-item" href="settings.html"><i class="bi bi-gear"></i>
+                                        Settings</a></li>
+                                <li><a class="dropdown-item" href="updates.html"><i class="bi bi-bell"></i>
+                                        Updates</a></li>
+                                <li><a class="dropdown-item" href="help-center.html"><i
+                                            class="bi bi-question-circle"></i> Help Center</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-danger" href="#" id="logoutBtn"><i
+                                            class="bi bi-box-arrow-right"></i> Logout</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="row align-items-center">
@@ -72,7 +170,8 @@
                         <i class="bi bi-star-fill"></i>
                         <span>Trusted by 50,000+ learners worldwide</span>
                     </div>
-                    <h1>Master Tech Skills.<br><span class="gradient-text">Advance Your Career.</span></h1>
+                    <h1>Master Tech Skills.<br><span class="gradient-text" id="careerTyping">Advance Your Career.</span>
+                    </h1>
                     <p class="lead">Learn from industry experts with hands-on projects, real-world applications, and a
                         community of passionate learners.</p>
                     <div class="d-flex gap-3 flex-wrap">
@@ -105,22 +204,38 @@
         </div>
     </section>
 
-    <!-- Trusted By -->
     <section class="trusted-section">
         <div class="container text-center">
-            <p class="mb-4">Trusted by teams at leading companies</p>
-            <div class="trusted-logos">
+            <p class="trusted-title mb-4"><span id="trustedTyping"></span><span class="typing-cursor"></span></p>
+            <div class="trusted-track">
                 <span>Google</span>
                 <span>Microsoft</span>
                 <span>Amazon</span>
                 <span>Meta</span>
                 <span>Apple</span>
                 <span>Netflix</span>
+                <span>IBM</span>
+                <span>DeepLearning.AI</span>
+                <span>Tesla</span>
+                <span>NVIDIA</span>
+                <span>Adobe</span>
+                <span>Salesforce</span>
+                <span>Google</span>
+                <span>Microsoft</span>
+                <span>Amazon</span>
+                <span>Meta</span>
+                <span>Apple</span>
+                <span>Netflix</span>
+                <span>IBM</span>
+                <span>DeepLearning.AI</span>
+                <span>Tesla</span>
+                <span>NVIDIA</span>
+                <span>Adobe</span>
+                <span>Salesforce</span>
             </div>
         </div>
     </section>
 
-    <!-- Categories -->
     <section class="bg-white-section">
         <div class="container">
             <div class="text-center mb-5">
@@ -205,7 +320,6 @@
         </div>
     </section>
 
-    <!-- Featured Courses -->
     <section class="bg-light-section">
         <div class="container">
             <div class="text-center mb-5">
@@ -214,7 +328,6 @@
                 <p class="section-subtitle">Hand-picked courses loved by thousands of learners</p>
             </div>
             <div class="row" id="featuredCourses">
-                <!-- Rendered by JS -->
             </div>
             <div class="text-center mt-4">
                 <a href="courses.html" class="btn btn-outline-primary btn-lg">View All Courses <i
@@ -223,7 +336,6 @@
         </div>
     </section>
 
-    <!-- How It Works -->
     <section class="bg-white-section">
         <div class="container">
             <div class="text-center mb-5">
@@ -257,68 +369,215 @@
         </div>
     </section>
 
-    <!-- Testimonials -->
     <section class="bg-light-section">
         <div class="container">
             <div class="text-center mb-5">
-                <span class="section-badge">Testimonials</span>
-                <h2 class="section-title">What Our Learners Say</h2>
-                <p class="section-subtitle">Join thousands of satisfied students who transformed their careers</p>
+                <span class="section-badge">Why Novio?</span>
+                <h2 class="section-title">Everything You Need to Succeed</h2>
+                <p class="section-subtitle">More than just courses â€” a complete learning ecosystem designed for results
+                </p>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
-                    <div class="testimonial-card animate-on-scroll">
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
-                        </div>
-                        <p>"Novio completely changed my career trajectory. The web development bootcamp was exactly what
-                            I needed to land my first developer job."</p>
-                        <div class="author">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80"
-                                alt="Sarah M.">
+                    <div class="card p-4 h-100 text-center animate-on-scroll">
+                        <i class="bi bi-infinity display-4 mb-3" style="color:var(--primary);"></i>
+                        <h5>Lifetime Access</h5>
+                        <p class="text-muted">Pay once, learn forever. Every course comes with lifetime access including
+                            all future updates and new content additions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-4 h-100 text-center animate-on-scroll">
+                        <i class="bi bi-award display-4 mb-3" style="color:var(--primary);"></i>
+                        <h5>Verified Certificates</h5>
+                        <p class="text-muted">Earn industry-recognized certificates upon completion. Share them on
+                            LinkedIn and add them to your resume.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-4 h-100 text-center animate-on-scroll">
+                        <i class="bi bi-code-square display-4 mb-3" style="color:var(--primary);"></i>
+                        <h5>Hands-On Projects</h5>
+                        <p class="text-muted">Build a portfolio of real-world projects. Every course includes practical
+                            assignments and capstone projects.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-4 h-100 text-center animate-on-scroll">
+                        <i class="bi bi-people display-4 mb-3" style="color:var(--primary);"></i>
+                        <h5>Community Support</h5>
+                        <p class="text-muted">Join a community of 50K+ learners. Get help in forums, study groups, and
+                            live Q&A sessions with instructors.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-4 h-100 text-center animate-on-scroll">
+                        <i class="bi bi-phone display-4 mb-3" style="color:var(--primary);"></i>
+                        <h5>Learn Anywhere</h5>
+                        <p class="text-muted">Access courses on any device. Download lessons for offline learning and
+                            study on the go at your own pace.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-4 h-100 text-center animate-on-scroll">
+                        <i class="bi bi-shield-check display-4 mb-3" style="color:var(--primary);"></i>
+                        <h5>30-Day Money Back</h5>
+                        <p class="text-muted">Not satisfied? Get a full refund within 30 days, no questions asked. We
+                            stand behind our course quality.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-badge">Expert Faculty</span>
+                <h2 class="section-title">Meet Our Instructors</h2>
+                <p class="section-subtitle">Learn from industry professionals with years of real-world experience</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center p-4 h-100 animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&h=200&fit=crop&crop=face"
+                            alt="Dr. Alex Rivera" class="rounded-circle mx-auto mb-3" width="100" height="100"
+                            loading="lazy">
+                        <h5 class="mb-1">Dr. Alex Rivera</h5>
+                        <p class="text-muted small mb-2">AI & Machine Learning</p>
+                        <p class="text-muted small">Former Google Brain researcher with 12 years in deep learning and
+                            NLP. 15K+ students enrolled.</p>
+                        <div class="mt-auto"><span class="text-warning"><i class="bi bi-star-fill"></i></span> 4.9
+                            &bull; <small class="text-muted">32 courses</small></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center p-4 h-100 animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=face"
+                            alt="Sarah Chen" class="rounded-circle mx-auto mb-3" width="100" height="100"
+                            loading="lazy">
+                        <h5 class="mb-1">Sarah Chen</h5>
+                        <p class="text-muted small mb-2">Full-Stack Development</p>
+                        <p class="text-muted small">Ex-Meta senior engineer. Specializes in React, Node.js, and system
+                            design. 22K+ students enrolled.</p>
+                        <div class="mt-auto"><span class="text-warning"><i class="bi bi-star-fill"></i></span> 4.8
+                            &bull; <small class="text-muted">28 courses</small></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center p-4 h-100 animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face"
+                            alt="Marcus Johnson" class="rounded-circle mx-auto mb-3" width="100" height="100"
+                            loading="lazy">
+                        <h5 class="mb-1">Marcus Johnson</h5>
+                        <p class="text-muted small mb-2">Cybersecurity</p>
+                        <p class="text-muted small">CISSP-certified with 15 years in enterprise security. Former
+                            Pentagon cybersecurity advisor. 10K+ students.</p>
+                        <div class="mt-auto"><span class="text-warning"><i class="bi bi-star-fill"></i></span> 4.9
+                            &bull; <small class="text-muted">18 courses</small></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center p-4 h-100 animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop&crop=face"
+                            alt="Emma Patel" class="rounded-circle mx-auto mb-3" width="100" height="100"
+                            loading="lazy">
+                        <h5 class="mb-1">Emma Patel</h5>
+                        <p class="text-muted small mb-2">UI/UX & Product Design</p>
+                        <p class="text-muted small">Lead designer at Figma and design mentor. Focuses on design systems
+                            and user research. 8K+ students.</p>
+                        <div class="mt-auto"><span class="text-warning"><i class="bi bi-star-fill"></i></span> 4.7
+                            &bull; <small class="text-muted">14 courses</small></div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="about.html" class="btn btn-outline-primary btn-lg">View All Instructors <i
+                        class="bi bi-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-badge">Guided Journeys</span>
+                <h2 class="section-title">Learning Paths</h2>
+                <p class="section-subtitle">Structured roadmaps to take you from beginner to job-ready</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card p-4 h-100 animate-on-scroll">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="rounded-3 d-flex align-items-center justify-content-center flex-shrink-0"
+                                style="width:56px;height:56px;background:linear-gradient(135deg,#4F46E5,#8B5CF6);color:#fff;">
+                                <i class="bi bi-code-slash fs-4"></i>
+                            </div>
                             <div>
-                                <h6>Sarah M.</h6>
-                                <span>Frontend Developer at Google</span>
+                                <h5 class="mb-1">Full-Stack Web Developer</h5>
+                                <p class="text-muted small mb-2">12 courses &bull; 96 hours &bull; Beginner to Advanced
+                                </p>
+                                <p class="text-muted">Master HTML, CSS, JavaScript, React, Node.js, databases, and
+                                    deployment. Graduate with a complete portfolio of production-ready projects.</p>
+                                <a href="courses.html" class="text-decoration-none">View Path <i
+                                        class="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="testimonial-card animate-on-scroll">
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
-                        </div>
-                        <p>"The data science course was phenomenal. Clear explanations, great projects, and the
-                            instructor support was outstanding."</p>
-                        <div class="author">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80"
-                                alt="James L.">
+                <div class="col-lg-6">
+                    <div class="card p-4 h-100 animate-on-scroll">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="rounded-3 d-flex align-items-center justify-content-center flex-shrink-0"
+                                style="width:56px;height:56px;background:linear-gradient(135deg,#059669,#10B981);color:#fff;">
+                                <i class="bi bi-graph-up fs-4"></i>
+                            </div>
                             <div>
-                                <h6>James L.</h6>
-                                <span>Data Analyst at Amazon</span>
+                                <h5 class="mb-1">Data Scientist</h5>
+                                <p class="text-muted small mb-2">10 courses &bull; 84 hours &bull; Beginner to Advanced
+                                </p>
+                                <p class="text-muted">Learn Python, statistics, pandas, machine learning, and data
+                                    visualization. Build end-to-end data pipelines and ML models.</p>
+                                <a href="courses.html" class="text-decoration-none">View Path <i
+                                        class="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="testimonial-card animate-on-scroll">
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-half"></i>
-                        </div>
-                        <p>"Best investment I've ever made. The cloud computing course helped me get AWS certified and I
-                            got a 40% raise!"</p>
-                        <div class="author">
-                            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=100&q=80"
-                                alt="David K.">
+                <div class="col-lg-6">
+                    <div class="card p-4 h-100 animate-on-scroll">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="rounded-3 d-flex align-items-center justify-content-center flex-shrink-0"
+                                style="width:56px;height:56px;background:linear-gradient(135deg,#DC2626,#F87171);color:#fff;">
+                                <i class="bi bi-shield-lock fs-4"></i>
+                            </div>
                             <div>
-                                <h6>David K.</h6>
-                                <span>Cloud Engineer at Microsoft</span>
+                                <h5 class="mb-1">Cybersecurity Analyst</h5>
+                                <p class="text-muted small mb-2">8 courses &bull; 72 hours &bull; Beginner to Advanced
+                                </p>
+                                <p class="text-muted">Master network security, ethical hacking, penetration testing, and
+                                    incident response. Prepare for CompTIA Security+ and CEH certifications.</p>
+                                <a href="courses.html" class="text-decoration-none">View Path <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card p-4 h-100 animate-on-scroll">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="rounded-3 d-flex align-items-center justify-content-center flex-shrink-0"
+                                style="width:56px;height:56px;background:linear-gradient(135deg,#D97706,#FBBF24);color:#fff;">
+                                <i class="bi bi-cloud fs-4"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Cloud & DevOps Engineer</h5>
+                                <p class="text-muted small mb-2">9 courses &bull; 78 hours &bull; Intermediate to
+                                    Advanced</p>
+                                <p class="text-muted">Learn AWS, Docker, Kubernetes, Terraform, and CI/CD pipelines.
+                                    Graduate ready for AWS Solutions Architect certification.</p>
+                                <a href="courses.html" class="text-decoration-none">View Path <i
+                                        class="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -327,7 +586,216 @@
         </div>
     </section>
 
-    <!-- Stats -->
+    <section class="bg-white-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-badge">Testimonials</span>
+                <h2 class="section-title">What Our Learners Say</h2>
+                <p class="section-subtitle">Join thousands of satisfied students who transformed their careers</p>
+            </div>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="testimonial-card">
+                                    <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i></div>
+                                    <p>"Novio completely changed my career trajectory. The web development bootcamp was
+                                        exactly what I needed to land my first developer job."</p>
+                                    <div class="author"><img
+                                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80"
+                                            alt="Sarah M.">
+                                        <div>
+                                            <h6>Sarah M.</h6><span>Frontend Developer at Google</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="testimonial-card">
+                                    <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i></div>
+                                    <p>"The data science course was phenomenal. Clear explanations, great projects, and
+                                        the instructor support was outstanding."</p>
+                                    <div class="author"><img
+                                            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80"
+                                            alt="James L.">
+                                        <div>
+                                            <h6>James L.</h6><span>Data Analyst at Amazon</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 d-none d-lg-block">
+                                <div class="testimonial-card">
+                                    <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-half"></i></div>
+                                    <p>"Best investment I've ever made. The cloud computing course helped me get AWS
+                                        certified and I got a 40% raise!"</p>
+                                    <div class="author"><img
+                                            src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=100&q=80"
+                                            alt="David K.">
+                                        <div>
+                                            <h6>David K.</h6><span>Cloud Engineer at Microsoft</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="testimonial-card">
+                                    <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i></div>
+                                    <p>"The AI/ML course blew my mind. I went from zero knowledge to building real
+                                        neural networks in just 8 weeks."</p>
+                                    <div class="author"><img
+                                            src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&q=80"
+                                            alt="Priya R.">
+                                        <div>
+                                            <h6>Priya R.</h6><span>ML Engineer at DeepMind</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="testimonial-card">
+                                    <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i></div>
+                                    <p>"Incredible platform! The cybersecurity course gave me practical skills that I
+                                        use every day in my security operations role."</p>
+                                    <div class="author"><img
+                                            src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&q=80"
+                                            alt="Marcus T.">
+                                        <div>
+                                            <h6>Marcus T.</h6><span>Security Analyst at IBM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 d-none d-lg-block">
+                                <div class="testimonial-card">
+                                    <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-half"></i></div>
+                                    <p>"As a self-taught developer, Novio filled in all the gaps. The React course is
+                                        hands-down the best resource I've found online."</p>
+                                    <div class="author"><img
+                                            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80"
+                                            alt="Lisa W.">
+                                        <div>
+                                            <h6>Lisa W.</h6><span>Full-Stack Developer at Stripe</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="testimonial-card">
+                                    <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i></div>
+                                    <p>"The DevOps course transformed how I think about software delivery. Kubernetes
+                                        felt impossible before, now I manage clusters daily."</p>
+                                    <div class="author"><img
+                                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80"
+                                            alt="Chen W.">
+                                        <div>
+                                            <h6>Chen W.</h6><span>DevOps Lead at Shopify</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="testimonial-card">
+                                    <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i></div>
+                                    <p>"The UI/UX design course was a game-changer. I transitioned from graphic design
+                                        to product design and doubled my salary."</p>
+                                    <div class="author"><img
+                                            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&q=80"
+                                            alt="Emma S.">
+                                        <div>
+                                            <h6>Emma S.</h6><span>Product Designer at Figma</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 d-none d-lg-block">
+                                <div class="testimonial-card">
+                                    <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-half"></i></div>
+                                    <p>"I love how practical the Python course is. Within a month I automated half my
+                                        workflow and impressed my entire team."</p>
+                                    <div class="author"><img
+                                            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80"
+                                            alt="Omar F.">
+                                        <div>
+                                            <h6>Omar F.</h6><span>Software Engineer at Netflix</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="testimonial-card">
+                                    <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i></div>
+                                    <p>"Outstanding mobile dev course! I shipped my first Flutter app to both app stores
+                                        within 3 months of starting the course."</p>
+                                    <div class="author"><img
+                                            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80"
+                                            alt="Nina P.">
+                                        <div>
+                                            <h6>Nina P.</h6><span>Mobile Developer at Uber</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators-custom mt-4 text-center">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
     <section class="bg-white-section">
         <div class="container">
             <div class="row g-4">
@@ -359,7 +827,145 @@
         </div>
     </section>
 
-    <!-- CTA -->
+    <section class="bg-light-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-badge">Blog</span>
+                <h2 class="section-title">Latest from the Blog</h2>
+                <p class="section-subtitle">Stay up to date with tech education trends, tips, and insights</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Online Learning" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Learning Tips</span>
+                            <h5 class="card-title">10 Strategies for Effective Online Learning</h5>
+                            <p class="card-text text-muted">Master the art of self-paced learning with these proven
+                                techniques used by top students.</p>
+                            <small class="text-muted">Jan 15, 2026 &bull; 5 min read</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="AI Education" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Industry Insights</span>
+                            <h5 class="card-title">The Future of AI in Education</h5>
+                            <p class="card-text text-muted">How artificial intelligence is reshaping the way we learn
+                                and teach technology skills.</p>
+                            <small class="text-muted">Jan 10, 2026 &bull; 7 min read</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Programming" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Tech Trends</span>
+                            <h5 class="card-title">Top Programming Languages to Learn in 2026</h5>
+                            <p class="card-text text-muted">Stay ahead of the curve with our guide to the most in-demand
+                                programming languages.</p>
+                            <small class="text-muted">Jan 5, 2026 &bull; 6 min read</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="blog.html" class="btn btn-outline-primary btn-lg">Read All Articles <i
+                        class="bi bi-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-badge">FAQ</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know before you get started</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="homeFaq">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#hfaq1">How does Novio work?</button>
+                            </h2>
+                            <div id="hfaq1" class="accordion-collapse collapse show" data-bs-parent="#homeFaq">
+                                <div class="accordion-body text-muted">Browse our catalog, choose a course, and start
+                                    learning immediately. All courses are self-paced with lifetime access, so you can
+                                    learn on your schedule. You'll get video lessons, hands-on projects, quizzes, and a
+                                    certificate upon completion.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#hfaq2">Do I need prior experience?</button>
+                            </h2>
+                            <div id="hfaq2" class="accordion-collapse collapse" data-bs-parent="#homeFaq">
+                                <div class="accordion-body text-muted">Not at all! Many of our courses are designed for
+                                    complete beginners. Each course page clearly shows the difficulty level (Beginner,
+                                    Intermediate, or Advanced) and any prerequisites. Our learning paths guide you from
+                                    zero to job-ready.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#hfaq3">Are the certificates recognized by employers?</button>
+                            </h2>
+                            <div id="hfaq3" class="accordion-collapse collapse" data-bs-parent="#homeFaq">
+                                <div class="accordion-body text-muted">Yes! Our certificates are recognized by 500+
+                                    hiring partners including Google, Amazon, and Microsoft. Each certificate includes a
+                                    unique verification link that employers can use to confirm your achievement.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#hfaq4">What if I'm not satisfied with a course?</button>
+                            </h2>
+                            <div id="hfaq4" class="accordion-collapse collapse" data-bs-parent="#homeFaq">
+                                <div class="accordion-body text-muted">We offer a 30-day money-back guarantee on all
+                                    courses. If you're not satisfied for any reason, simply request a refund within 30
+                                    days of purchase â€” no questions asked, no hassle.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#hfaq5">Can I access courses on mobile?</button>
+                            </h2>
+                            <div id="hfaq5" class="accordion-collapse collapse" data-bs-parent="#homeFaq">
+                                <div class="accordion-body text-muted">Absolutely. Novio is fully responsive and works
+                                    on all devices â€” desktop, tablet, and mobile. You can also download lessons for
+                                    offline watching, perfect for learning on the go.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#hfaq6">Do courses expire?</button>
+                            </h2>
+                            <div id="hfaq6" class="accordion-collapse collapse" data-bs-parent="#homeFaq">
+                                <div class="accordion-body text-muted">No, never. Once you purchase a course, you have
+                                    lifetime access. This includes all future updates the instructor makes. Your
+                                    progress is saved automatically so you can pick up right where you left off.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="cta-section">
         <div class="container">
             <h2>Ready to Start Learning?</h2>
@@ -368,39 +974,67 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <h5>Novio</h5>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo/novio-logo.png" alt="Novio" class="logo-img">
+                    </div>
                     <p>Empowering learners worldwide with premium tech courses from industry experts.</p>
                     <div class="social-links">
-                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="https://facebook.com/ahmershah29" aria-label="Facebook" target="_blank"
+                            rel="noopener"><i class="bi bi-facebook"></i></a>
+                        <a href="https://x.com/ahmershah29" aria-label="X" target="_blank" rel="noopener"><i
+                                class="bi bi-twitter-x"></i></a>
+                        <a href="https://linkedin.com/in/syedahmershah" aria-label="LinkedIn" target="_blank"
+                            rel="noopener"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/ahmershahdev" aria-label="GitHub" target="_blank" rel="noopener"><i
+                                class="bi bi-github"></i></a>
+                        <a href="https://youtube.com/@ahmershahdev" aria-label="YouTube" target="_blank"
+                            rel="noopener"><i class="bi bi-youtube"></i></a>
+                        <a href="https://ahmershah.dev/" aria-label="Portfolio" target="_blank" rel="noopener"><i
+                                class="bi bi-globe2"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6">
-                    <h6>Platform</h6>
+                    <h6>Novio</h6>
                     <ul>
-                        <li><a href="courses.html">Courses</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="leadership.html">Leadership</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="catalog.html">Catalog</a></li>
+                        <li><a href="novio-plus.html">Novio Plus</a></li>
+                        <li><a href="courses.html">Professional Certificates</a></li>
+                        <li><a href="courses.html">MasterTrack&reg; Certificates</a></li>
+                        <li><a href="courses.html">Degrees</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6">
-                    <h6>Support</h6>
+                    <h6>Community</h6>
                     <ul>
-                        <li><a href="contact.html">Help Center</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="learners.html">Learners</a></li>
+                        <li><a href="partners.html">Partners</a></li>
+                        <li><a href="beta-testers.html">Beta Testers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="podcast.html">The Novio Podcast</a></li>
+                        <li><a href="tech-blog.html">Tech Blog</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-2 col-md-6">
+                    <h6>More</h6>
+                    <ul>
+                        <li><a href="press.html">Press</a></li>
+                        <li><a href="investors.html">Investors</a></li>
+                        <li><a href="terms-of-service.html">Terms</a></li>
+                        <li><a href="privacy-policy.html">Privacy</a></li>
+                        <li><a href="help-center.html">Help</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="affiliates.html">Affiliates</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
                     <h6>Newsletter</h6>
                     <p>Stay updated with new courses and exclusive offers.</p>
                     <form class="newsletter-form">
@@ -411,37 +1045,50 @@
             </div>
             <hr>
             <div class="footer-bottom">
-                <p>&copy; 2026 Novio. All rights reserved.</p>
-                <p>Made with <i class="bi bi-heart-fill" style="color:#EF4444;"></i> for learners everywhere</p>
+                <p>&copy; 2026 Novio Inc. All rights reserved.</p>
+                <p>Made by Syed Ahmer Shah</p>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top -->
     <button class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
 
-    <!-- Scripts -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/ui.js"></script>
+    <script src="assets/js/courses.js"></script>
+    <script src="assets/js/course-detail.js"></script>
+    <script src="assets/js/cart-page.js"></script>
+    <script src="assets/js/auth-forms.js"></script>
+    <script src="assets/js/account.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/nav-search.js"></script>
 
-    <!-- Structured Data -->
     <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
-    "name": "Novio",
-    "description": "Premium online tech courses platform",
-    "url": "https://novio.com",
-    "sameAs": [],
-    "offers": {
-      "@type": "AggregateOffer",
-      "lowPrice": "49.99",
-      "highPrice": "249.99",
-      "priceCurrency": "USD"
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Novio",
+        "description": "Premium online tech courses platform empowering learners worldwide with industry-expert instruction.",
+        "url": "https://ahmershahdev.github.io/novio/",
+        "logo": "https://ahmershahdev.github.io/novio/assets/images/logo.png",
+        "sameAs": [
+            "https://facebook.com/ahmershah29",
+            "https://x.com/ahmershah29",
+            "https://linkedin.com/in/syedahmershah",
+            "https://github.com/ahmershahdev",
+            "https://youtube.com/@ahmershahdev"
+        ],
+        "offers": {
+            "@type": "AggregateOffer",
+            "lowPrice": "29.99",
+            "highPrice": "249.99",
+            "priceCurrency": "USD"
+        }
     }
-  }
-  </script>
+    </script>
 </body>
 
 </html>

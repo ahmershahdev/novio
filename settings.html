@@ -4,20 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Complete your course purchase securely on Novio.">
+    <meta name="description" content="Manage your Novio account settings, notifications, and preferences.">
     <meta name="robots" content="noindex, nofollow">
     <meta name="author" content="Syed Ahmer Shah">
-    <meta property="og:title" content="Payment | Novio">
-    <meta property="og:description" content="Complete your course purchase securely on Novio.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ahmershahdev.github.io/novio/payment.html">
-    <meta property="og:site_name" content="Novio">
-    <meta property="og:image" content="https://ahmershahdev.github.io/novio/assets/images/og-image.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Payment | Novio">
-    <meta name="twitter:description" content="Complete your course purchase securely on Novio.">
-    <link rel="canonical" href="https://ahmershahdev.github.io/novio/payment.html">
-    <title>Payment | NOVIO</title>
+    <title>Settings | NOVIO</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -42,12 +32,11 @@
             <a class="navbar-brand-logo" href="index.html">
                 <img src="assets/images/logo/novio-logo.png" alt="Novio" class="logo-img">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav"
-                aria-controls="mobileNav" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav" aria-controls="mobileNav"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="mobileNav">
-                <div class="navbar-inner">
+            <div class="collapse navbar-collapse" id="mobileNav"><div class="navbar-inner">
                     <div class="navbar-search">
                         <i class="bi bi-search search-icon"></i>
                         <input type="text" class="search-input" placeholder="Search courses...">
@@ -104,7 +93,7 @@
                                         <div class="col-lg-3 col-md-6">
                                             <h6 class="mega-menu-title"><i class="bi bi-box"></i> Resources</h6>
                                             <ul class="mega-menu-list">
-                                                <li><a href="novio-plus.html"><i class="bi bi-stars"></i> Novio Plus</a>
+                                                <li><a href="novio-plus.html"><i class="bi bi-star"></i> Novio Plus</a>
                                                 </li>
                                                 <li><a href="catalog.html"><i class="bi bi-grid"></i> Catalog</a></li>
                                                 <li><a href="affiliates.html"><i class="bi bi-people"></i>
@@ -135,14 +124,14 @@
                                         Profile</a></li>
                                 <li><a class="dropdown-item" href="my-courses.html"><i class="bi bi-book"></i> My
                                         Courses</a></li>
-                                <li><a class="dropdown-item" href="purchases.html"><i class="bi bi-bag"></i> My
+                                <li><a class="dropdown-item" href="purchases.html"><i class="bi bi-bag"></i>
                                         Purchases</a></li>
                                 <li><a class="dropdown-item" href="achievements.html"><i class="bi bi-trophy"></i>
-                                        Accomplishments</a></li>
+                                        Achievements</a></li>
                                 <li><a class="dropdown-item" href="settings.html"><i class="bi bi-gear"></i>
                                         Settings</a></li>
-                                <li><a class="dropdown-item" href="updates.html"><i class="bi bi-bell"></i>
-                                        Updates</a></li>
+                                <li><a class="dropdown-item" href="updates.html"><i class="bi bi-bell"></i> Updates</a>
+                                </li>
                                 <li><a class="dropdown-item" href="help-center.html"><i
                                             class="bi bi-question-circle"></i> Help Center</a></li>
                                 <li>
@@ -160,130 +149,93 @@
 
     <section class="page-hero">
         <div class="container">
-            <span class="section-badge">Secure Checkout</span>
-            <h1>Payment</h1>
-            <p>Complete your purchase to start learning</p>
+            <span class="section-badge">Account</span>
+            <h1>Settings</h1>
+            <p>Manage your account preferences and security settings</p>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="cart.html">Cart</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Payment</li>
+                    <li class="breadcrumb-item"><a href="account.html">Account</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Settings</li>
                 </ol>
             </nav>
         </div>
     </section>
 
-    <section class="py-5" id="paymentPage">
+    <section class="py-5">
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-7">
-                    <form id="paymentForm" novalidate>
-                        <div class="payment-card mb-4">
-                            <h5><i class="bi bi-person me-2"></i>Personal Information</h5>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label class="form-label small" for="payName">Full Name *</label>
-                                    <input type="text" class="form-control" id="payName" placeholder="John Doe"
-                                        required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label small" for="payEmail">Email Address *</label>
-                                    <input type="email" class="form-control" id="payEmail" placeholder="you@example.com"
-                                        required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label small" for="payPhone">Phone Number</label>
-                                    <input type="tel" class="form-control" id="payPhone" placeholder="+92 3XX XXXXXXX">
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label small" for="payCountry">Country</label>
-                                    <select class="form-select" id="payCountry"
-                                        style="border:1px solid var(--border);border-radius:var(--radius);padding:10px 14px;font-size:0.925rem;">
-                                        <option value="">Select country</option>
-                                        <option value="PK" selected>Pakistan</option>
-                                        <option value="US">United States</option>
-                                        <option value="UK">United Kingdom</option>
-                                        <option value="CA">Canada</option>
-                                        <option value="AU">Australia</option>
-                                        <option value="DE">Germany</option>
-                                        <option value="FR">France</option>
-                                        <option value="IN">India</option>
-                                        <option value="OTHER">Other</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="payment-card mb-4">
-                            <h5><i class="bi bi-credit-card me-2"></i>Payment Method</h5>
-                            <div class="payment-methods">
-                                <div class="method-option active">
-                                    <i class="bi bi-credit-card-2-front"></i>
-                                    Credit Card
-                                </div>
-                                <div class="method-option">
-                                    <i class="bi bi-paypal"></i>
-                                    PayPal
-                                </div>
-                                <div class="method-option">
-                                    <i class="bi bi-wallet2"></i>
-                                    Wallet
-                                </div>
-                            </div>
-                            <div class="row g-3">
-                                <div class="col-12">
-                                    <label class="form-label small" for="cardNumber">Card Number</label>
-                                    <input type="text" class="form-control" id="cardNumber"
-                                        placeholder="1234 5678 9012 3456" maxlength="19">
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label small" for="cardExpiry">Expiry Date</label>
-                                    <input type="text" class="form-control" id="cardExpiry" placeholder="MM/YY"
-                                        maxlength="5">
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label small" for="cardCVV">CVV</label>
-                                    <input type="text" class="form-control" id="cardCVV" placeholder="123"
-                                        maxlength="4">
-                                </div>
-                            </div>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-lg w-100">
-                            <i class="bi bi-lock me-2"></i>Complete Payment
-                        </button>
-
-                        <div class="text-center mt-3">
-                            <p class="small text-muted"><i class="bi bi-shield-check me-1"></i>256-bit SSL encrypted
-                                secure payment</p>
-                        </div>
-                    </form>
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm p-4">
+                        <h5 class="fw-bold mb-4">Settings Menu</h5>
+                        <nav class="nav flex-column gap-1">
+                            <a class="nav-link active rounded px-3 py-2" href="#profile-settings"
+                                style="background: var(--primary-light); color: var(--primary);"><i
+                                    class="bi bi-person me-2"></i> Profile</a>
+                            <a class="nav-link rounded px-3 py-2 text-secondary" href="#notifications"><i
+                                    class="bi bi-bell me-2"></i> Notifications</a>
+                            <a class="nav-link rounded px-3 py-2 text-secondary" href="#security"><i
+                                    class="bi bi-shield-lock me-2"></i> Security</a>
+                            <a class="nav-link rounded px-3 py-2 text-secondary" href="#privacy"><i
+                                    class="bi bi-eye me-2"></i> Privacy</a>
+                            <a class="nav-link rounded px-3 py-2 text-secondary" href="#billing"><i
+                                    class="bi bi-credit-card me-2"></i> Billing</a>
+                        </nav>
+                    </div>
                 </div>
-
-                <div class="col-lg-5">
-                    <div class="cart-summary">
-                        <h5>Order Summary</h5>
-                        <div id="paymentOrderItems">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm p-4 mb-4" id="profile-settings">
+                        <h5 class="fw-bold mb-3">Profile Settings</h5>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Full Name</label>
+                                    <input type="text" class="form-control" id="settingsName">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Email</label>
+                                    <input type="email" class="form-control" id="settingsEmail" readonly>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-semibold">Bio</label>
+                                    <textarea class="form-control" rows="3"
+                                        placeholder="Tell us about yourself..."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="button" class="btn btn-primary">Save Changes</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card border-0 shadow-sm p-4 mb-4" id="notifications">
+                        <h5 class="fw-bold mb-3">Notification Preferences</h5>
+                        <div class="form-check form-switch mb-3">
+                            <input class="form-check-input" type="checkbox" id="emailNotif" checked>
+                            <label class="form-check-label" for="emailNotif">Email notifications</label>
                         </div>
-                        <div class="summary-row mt-3">
-                            <span>Subtotal</span>
-                            <span id="paymentSubtotal">$0.00</span>
+                        <div class="form-check form-switch mb-3">
+                            <input class="form-check-input" type="checkbox" id="courseNotif" checked>
+                            <label class="form-check-label" for="courseNotif">Course updates</label>
                         </div>
-                        <div class="summary-row">
-                            <span>Tax</span>
-                            <span>$0.00</span>
-                        </div>
-                        <div class="summary-row total">
-                            <span>Total</span>
-                            <span id="paymentTotal">$0.00</span>
+                        <div class="form-check form-switch mb-3">
+                            <input class="form-check-input" type="checkbox" id="promoNotif">
+                            <label class="form-check-label" for="promoNotif">Promotional emails</label>
                         </div>
                     </div>
-
-                    <div class="mt-4 text-center">
-                        <div class="d-flex justify-content-center gap-4 small text-muted">
-                            <div><i class="bi bi-shield-check d-block fs-4 text-success mb-1"></i>Secure</div>
-                            <div><i class="bi bi-arrow-repeat d-block fs-4 text-primary mb-1"></i>30-Day Refund</div>
-                            <div><i class="bi bi-infinity d-block fs-4 text-info mb-1"></i>Lifetime Access</div>
+                    <div class="card border-0 shadow-sm p-4" id="security">
+                        <h5 class="fw-bold mb-3">Security</h5>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">New Password</label>
+                                <input type="password" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Confirm Password</label>
+                                <input type="password" class="form-control">
+                            </div>
+                            <div class="col-12">
+                                <button type="button" class="btn btn-primary">Update Password</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -296,7 +248,8 @@
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-logo">
-                        <img src="assets/images/logo/novio-logo.png" alt="Novio" class="logo-img">
+                        <span class="logo-icon">N</span>
+                        <span class="logo-text">NOVIO</span>
                     </div>
                     <p>Empowering learners worldwide with premium tech courses from industry experts.</p>
                     <div class="social-links">
@@ -310,8 +263,7 @@
                                 class="bi bi-github"></i></a>
                         <a href="https://youtube.com/@ahmershahdev" aria-label="YouTube" target="_blank"
                             rel="noopener"><i class="bi bi-youtube"></i></a>
-                        <a href="https://ahmershah.dev/" aria-label="Portfolio" target="_blank" rel="noopener"><i
-                                class="bi bi-globe2"></i></a>
+                        <a href="https://ahmershah.dev/" aria-label="Portfolio" target="_blank" rel="noopener"><i class="bi bi-globe2"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6">
@@ -368,6 +320,7 @@
         </div>
     </footer>
 
+    <button class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/data.js"></script>
@@ -380,21 +333,6 @@
     <script src="assets/js/account.js"></script>
     <script src="assets/js/animations.js"></script>
     <script src="assets/js/nav-search.js"></script>
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Payment",
-        "description": "Complete your Novio purchase.",
-        "url": "https://ahmershahdev.github.io/novio/payment.html",
-        "isPartOf": {
-            "@type": "WebSite",
-            "name": "Novio",
-            "url": "https://ahmershahdev.github.io/novio/"
-        }
-    }
-    </script>
 </body>
 
 </html>

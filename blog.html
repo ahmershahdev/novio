@@ -1,0 +1,669 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Read the latest from Novio - articles on tech education, learning tips, industry insights, and platform updates.">
+    <meta name="keywords" content="Novio blog, tech education blog, learning tips, programming articles">
+    <meta name="author" content="Syed Ahmer Shah">
+    <meta property="og:title" content="Blog | Novio">
+    <meta property="og:description" content="Articles on tech education, learning tips, and industry insights.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ahmershahdev.github.io/novio/blog.html">
+    <meta property="og:site_name" content="Novio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog | Novio">
+    <meta name="twitter:description" content="Articles on tech education, learning tips, and industry insights.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ahmershahdev.github.io/novio/blog.html">
+    <title>Blog | NOVIO</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="assets/css/courses.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand-logo" href="index.html">
+                <img src="assets/images/logo/novio-logo.png" alt="Novio" class="logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav"
+                aria-controls="mobileNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mobileNav">
+                <div class="navbar-inner">
+                    <div class="navbar-search">
+                        <i class="bi bi-search search-icon"></i>
+                        <input type="text" class="search-input" placeholder="Search courses...">
+                        <div class="nav-search-suggestions"></div>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                        <li class="nav-item dropdown mega-dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Explore</a>
+                            <div class="dropdown-menu mega-menu">
+                                <div class="container">
+                                    <div class="row g-4 p-3">
+                                        <div class="col-lg-3 col-md-6">
+                                            <h6 class="mega-menu-title"><i class="bi bi-fire"></i> Popular Categories
+                                            </h6>
+                                            <ul class="mega-menu-list">
+                                                <li><a href="courses.html"><i class="bi bi-code-slash"></i> Web
+                                                        Development</a></li>
+                                                <li><a href="courses.html"><i class="bi bi-graph-up"></i> Data
+                                                        Science</a></li>
+                                                <li><a href="courses.html"><i class="bi bi-robot"></i> Artificial
+                                                        Intelligence</a></li>
+                                                <li><a href="courses.html"><i class="bi bi-shield-lock"></i>
+                                                        Cybersecurity</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <h6 class="mega-menu-title"><i class="bi bi-signpost-split"></i> Learning
+                                                Paths</h6>
+                                            <ul class="mega-menu-list">
+                                                <li><a href="courses.html"><i class="bi bi-cloud"></i> Cloud
+                                                        Computing</a></li>
+                                                <li><a href="courses.html"><i class="bi bi-phone"></i> Mobile
+                                                        Development</a></li>
+                                                <li><a href="courses.html"><i class="bi bi-palette"></i> UI/UX
+                                                        Design</a></li>
+                                                <li><a href="courses.html"><i class="bi bi-gear"></i> DevOps</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <h6 class="mega-menu-title"><i class="bi bi-building"></i> Company</h6>
+                                            <ul class="mega-menu-list">
+                                                <li><a href="about.html"><i class="bi bi-info-circle"></i> About
+                                                        Novio</a></li>
+                                                <li><a href="contact.html"><i class="bi bi-envelope"></i> Contact Us</a>
+                                                </li>
+                                                <li><a href="careers.html"><i class="bi bi-briefcase"></i> Careers</a>
+                                                </li>
+                                                <li><a href="blog.html"><i class="bi bi-journal-text"></i> Blog</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <h6 class="mega-menu-title"><i class="bi bi-box"></i> Resources</h6>
+                                            <ul class="mega-menu-list">
+                                                <li><a href="novio-plus.html"><i class="bi bi-stars"></i> Novio Plus</a>
+                                                </li>
+                                                <li><a href="catalog.html"><i class="bi bi-grid"></i> Catalog</a></li>
+                                                <li><a href="affiliates.html"><i class="bi bi-people"></i>
+                                                        Affiliates</a></li>
+                                                <li><a href="help-center.html"><i class="bi bi-question-circle"></i>
+                                                        Help Center</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-2">
+                        <a href="cart.html" class="btn btn-icon position-relative" aria-label="Cart">
+                            <i class="bi bi-cart3"></i>
+                            <span class="cart-badge badge" data-count="0">0</span>
+                        </a>
+                        <a href="login.html" class="btn btn-outline-primary btn-sm" id="loginBtn">Log In</a>
+                        <a href="signup.html" class="btn btn-primary btn-sm" id="signupBtn">Sign Up</a>
+                        <div class="dropdown d-none" id="accountDropdown">
+                            <a href="#" class="btn btn-icon dropdown-toggle" id="accountBtn" data-bs-toggle="dropdown"
+                                aria-expanded="false" aria-label="Account">
+                                <i class="bi bi-person-circle"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end account-dropdown">
+                                <li><a class="dropdown-item" href="account.html"><i class="bi bi-person"></i>
+                                        Profile</a></li>
+                                <li><a class="dropdown-item" href="my-courses.html"><i class="bi bi-book"></i> My
+                                        Courses</a></li>
+                                <li><a class="dropdown-item" href="purchases.html"><i class="bi bi-bag"></i> My
+                                        Purchases</a></li>
+                                <li><a class="dropdown-item" href="achievements.html"><i class="bi bi-trophy"></i>
+                                        Accomplishments</a></li>
+                                <li><a class="dropdown-item" href="settings.html"><i class="bi bi-gear"></i>
+                                        Settings</a></li>
+                                <li><a class="dropdown-item" href="updates.html"><i class="bi bi-bell"></i>
+                                        Updates</a></li>
+                                <li><a class="dropdown-item" href="help-center.html"><i
+                                            class="bi bi-question-circle"></i> Help Center</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-danger" href="#" id="logoutBtn"><i
+                                            class="bi bi-box-arrow-right"></i> Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-badge">Novio Blog</span>
+            <h1>Insights & Articles</h1>
+            <p>Stay up to date with the latest in tech education, career tips, and industry trends</p>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section class="bg-white-section">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Learning Online" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Learning Tips</span>
+                            <h5 class="card-title">10 Strategies for Effective Online Learning</h5>
+                            <p class="card-text text-muted">Master the art of self-paced learning with these proven
+                                techniques used by top students worldwide.</p>
+                            <small class="text-muted">Jan 15, 2026 &bull; 5 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="AI and Machine Learning" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Industry Insights</span>
+                            <h5 class="card-title">The Future of AI in Education</h5>
+                            <p class="card-text text-muted">How artificial intelligence is reshaping the way we learn
+                                and teach technology skills.</p>
+                            <small class="text-muted">Jan 10, 2026 &bull; 7 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Web Development" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Tech Trends</span>
+                            <h5 class="card-title">Top Programming Languages to Learn in 2026</h5>
+                            <p class="card-text text-muted">Stay ahead of the curve with our comprehensive guide to the
+                                most in-demand languages.</p>
+                            <small class="text-muted">Jan 5, 2026 &bull; 6 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Remote Work" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Career</span>
+                            <h5 class="card-title">Building a Tech Career Without a CS Degree</h5>
+                            <p class="card-text text-muted">Real stories from self-taught developers who landed jobs at
+                                top companies.</p>
+                            <small class="text-muted">Dec 28, 2025 &bull; 8 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Cloud Computing" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Cloud</span>
+                            <h5 class="card-title">Cloud Computing Certifications Worth Getting</h5>
+                            <p class="card-text text-muted">A detailed comparison of AWS, Azure, and GCP certifications
+                                for career growth.</p>
+                            <small class="text-muted">Dec 20, 2025 &bull; 6 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Cybersecurity" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Cybersecurity</span>
+                            <h5 class="card-title">Cybersecurity Skills Every Developer Needs</h5>
+                            <p class="card-text text-muted">Essential security concepts that will make you a better and
+                                safer developer.</p>
+                            <small class="text-muted">Dec 15, 2025 &bull; 5 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="JavaScript Frameworks" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Web Dev</span>
+                            <h5 class="card-title">React vs Vue vs Angular: Which Framework to Choose?</h5>
+                            <p class="card-text text-muted">An in-depth comparison of the three most popular JavaScript
+                                frameworks for modern web development.</p>
+                            <small class="text-muted">Dec 10, 2025 &bull; 10 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Remote Teams" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Productivity</span>
+                            <h5 class="card-title">How to Stay Productive While Learning Remotely</h5>
+                            <p class="card-text text-muted">Practical tips for maintaining focus and momentum when
+                                studying from home.</p>
+                            <small class="text-muted">Dec 5, 2025 &bull; 4 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Data Science" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Data Science</span>
+                            <h5 class="card-title">Getting Started with Data Science: A Beginner's Roadmap</h5>
+                            <p class="card-text text-muted">Everything you need to know to begin your data science
+                                journey, from Python to machine learning.</p>
+                            <small class="text-muted">Nov 28, 2025 &bull; 9 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Women in Tech" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Community</span>
+                            <h5 class="card-title">Women in Tech: Breaking Barriers and Building Futures</h5>
+                            <p class="card-text text-muted">Inspiring stories of women leading innovation in the
+                                technology industry.</p>
+                            <small class="text-muted">Nov 22, 2025 &bull; 7 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="DevOps Pipeline" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">DevOps</span>
+                            <h5 class="card-title">Understanding CI/CD Pipelines for Beginners</h5>
+                            <p class="card-text text-muted">A step-by-step guide to building your first continuous
+                                integration and deployment pipeline.</p>
+                            <small class="text-muted">Nov 15, 2025 &bull; 8 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Machine Learning" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">AI</span>
+                            <h5 class="card-title">Machine Learning in 2026: What's New and What's Next</h5>
+                            <p class="card-text text-muted">Explore the latest breakthroughs in machine learning and how
+                                they affect the job market.</p>
+                            <small class="text-muted">Nov 8, 2025 &bull; 6 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Tech Interview" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Career</span>
+                            <h5 class="card-title">How to Ace Your Technical Interview</h5>
+                            <p class="card-text text-muted">Expert tips on preparing for coding interviews at FAANG
+                                companies and top startups.</p>
+                            <small class="text-muted">Nov 1, 2025 &bull; 12 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1536104968055-4d61aa56f46a?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Blockchain" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Blockchain</span>
+                            <h5 class="card-title">Blockchain Beyond Cryptocurrency: Real-World Applications</h5>
+                            <p class="card-text text-muted">How blockchain technology is revolutionizing supply chains,
+                                healthcare, and government.</p>
+                            <small class="text-muted">Oct 25, 2025 &bull; 7 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Mobile Development" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Mobile Dev</span>
+                            <h5 class="card-title">Flutter vs React Native: Building Cross-Platform Apps</h5>
+                            <p class="card-text text-muted">A hands-on comparison to help you choose the right
+                                cross-platform framework.</p>
+                            <small class="text-muted">Oct 18, 2025 &bull; 8 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Open Source" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Open Source</span>
+                            <h5 class="card-title">How Contributing to Open Source Boosts Your Career</h5>
+                            <p class="card-text text-muted">Why open source contributions are the secret weapon for
+                                landing your dream tech job.</p>
+                            <small class="text-muted">Oct 10, 2025 &bull; 5 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1558403194-611308249627?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="API Development" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Backend</span>
+                            <h5 class="card-title">REST vs GraphQL: Choosing the Right API Architecture</h5>
+                            <p class="card-text text-muted">When to use REST APIs versus GraphQL for your next project,
+                                with real-world examples.</p>
+                            <small class="text-muted">Oct 3, 2025 &bull; 6 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Code Quality" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Best Practices</span>
+                            <h5 class="card-title">Writing Clean Code: Principles Every Developer Should Know</h5>
+                            <p class="card-text text-muted">Learn the fundamental principles of clean code that separate
+                                good developers from great ones.</p>
+                            <small class="text-muted">Sep 25, 2025 &bull; 7 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="UX Design" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Design</span>
+                            <h5 class="card-title">UX Design Fundamentals for Developers</h5>
+                            <p class="card-text text-muted">Why every developer should understand UX principles, and how
+                                to get started.</p>
+                            <small class="text-muted">Sep 18, 2025 &bull; 5 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Networking" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Networking</span>
+                            <h5 class="card-title">Understanding Docker and Kubernetes for Beginners</h5>
+                            <p class="card-text text-muted">Containerization demystified: learn how Docker and
+                                Kubernetes work together.</p>
+                            <small class="text-muted">Sep 10, 2025 &bull; 9 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Team Collaboration" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Soft Skills</span>
+                            <h5 class="card-title">Soft Skills That Make You a Better Developer</h5>
+                            <p class="card-text text-muted">Communication, empathy, and collaboration: the underrated
+                                skills that drive team success.</p>
+                            <small class="text-muted">Sep 3, 2025 &bull; 4 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Database Design" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Database</span>
+                            <h5 class="card-title">SQL vs NoSQL: When to Use Which Database</h5>
+                            <p class="card-text text-muted">A practical guide to choosing between relational and
+                                non-relational databases for your project.</p>
+                            <small class="text-muted">Aug 26, 2025 &bull; 6 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Git Version Control" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Tools</span>
+                            <h5 class="card-title">Mastering Git: Advanced Tips and Workflows</h5>
+                            <p class="card-text text-muted">Go beyond git add and git commit with advanced branching
+                                strategies and team workflows.</p>
+                            <small class="text-muted">Aug 18, 2025 &bull; 8 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Tech Leadership" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Leadership</span>
+                            <h5 class="card-title">From Developer to Tech Lead: Making the Transition</h5>
+                            <p class="card-text text-muted">What it takes to move from writing code to leading
+                                engineering teams effectively.</p>
+                            <small class="text-muted">Aug 10, 2025 &bull; 7 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1580894894513-541e068a3e2b?w=600&h=400&fit=crop"
+                            class="card-img-top" alt="Web Performance" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Performance</span>
+                            <h5 class="card-title">Web Performance Optimization: A Complete Guide</h5>
+                            <p class="card-text text-muted">Speed up your websites with lazy loading, code splitting,
+                                caching, and more proven techniques.</p>
+                            <small class="text-muted">Aug 1, 2025 &bull; 11 min read</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h4 class="fw-bold mb-2">Read Us On</h4>
+            <p class="text-muted mb-4">Follow our articles on your favorite blogging platforms</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="https://medium.com/@syedahmershah" target="_blank" rel="noopener"
+                    class="btn btn-outline-dark btn-lg d-flex align-items-center gap-2">
+                    <i class="bi bi-medium" style="font-size:1.3rem;"></i> Medium
+                </a>
+                <a href="https://hashnode.com/@syedahmershah" target="_blank" rel="noopener"
+                    class="btn btn-outline-primary btn-lg d-flex align-items-center gap-2">
+                    <i class="bi bi-hash" style="font-size:1.3rem;"></i> Hashnode
+                </a>
+                <a href="https://dev.to/syedahmershah" target="_blank" rel="noopener"
+                    class="btn btn-outline-dark btn-lg d-flex align-items-center gap-2">
+                    <i class="bi bi-braces" style="font-size:1.3rem;"></i> Dev.to
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Want to Write for Novio?</h2>
+            <p>Share your knowledge with our community of 50K+ learners. We're always looking for guest authors.</p>
+            <a href="contact.html" class="btn btn-lg">Get in Touch <i class="bi bi-arrow-right ms-2"></i></a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo/novio-logo.png" alt="Novio" class="logo-img">
+                    </div>
+                    <p>Empowering learners worldwide with premium tech courses from industry experts.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/ahmershah29" aria-label="Facebook" target="_blank"
+                            rel="noopener"><i class="bi bi-facebook"></i></a>
+                        <a href="https://x.com/ahmershah29" aria-label="X" target="_blank" rel="noopener"><i
+                                class="bi bi-twitter-x"></i></a>
+                        <a href="https://linkedin.com/in/syedahmershah" aria-label="LinkedIn" target="_blank"
+                            rel="noopener"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/ahmershahdev" aria-label="GitHub" target="_blank" rel="noopener"><i
+                                class="bi bi-github"></i></a>
+                        <a href="https://youtube.com/@ahmershahdev" aria-label="YouTube" target="_blank"
+                            rel="noopener"><i class="bi bi-youtube"></i></a>
+                        <a href="https://ahmershah.dev/" aria-label="Portfolio" target="_blank" rel="noopener"><i
+                                class="bi bi-globe2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6>Novio</h6>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="leadership.html">Leadership</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="catalog.html">Catalog</a></li>
+                        <li><a href="novio-plus.html">Novio Plus</a></li>
+                        <li><a href="courses.html">Professional Certificates</a></li>
+                        <li><a href="courses.html">MasterTrack&reg; Certificates</a></li>
+                        <li><a href="courses.html">Degrees</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6>Community</h6>
+                    <ul>
+                        <li><a href="learners.html">Learners</a></li>
+                        <li><a href="partners.html">Partners</a></li>
+                        <li><a href="beta-testers.html">Beta Testers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="podcast.html">The Novio Podcast</a></li>
+                        <li><a href="tech-blog.html">Tech Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6>More</h6>
+                    <ul>
+                        <li><a href="press.html">Press</a></li>
+                        <li><a href="investors.html">Investors</a></li>
+                        <li><a href="terms-of-service.html">Terms</a></li>
+                        <li><a href="privacy-policy.html">Privacy</a></li>
+                        <li><a href="help-center.html">Help</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="affiliates.html">Affiliates</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6>Newsletter</h6>
+                    <p>Stay updated with new courses and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" aria-label="Subscribe"><i class="bi bi-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Novio Inc. All rights reserved.</p>
+                <p>Made by Syed Ahmer Shah</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/ui.js"></script>
+    <script src="assets/js/courses.js"></script>
+    <script src="assets/js/course-detail.js"></script>
+    <script src="assets/js/cart-page.js"></script>
+    <script src="assets/js/auth-forms.js"></script>
+    <script src="assets/js/account.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/nav-search.js"></script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Novio Blog",
+        "description": "Insights, tips, and stories from the world of tech education.",
+        "url": "https://ahmershahdev.github.io/novio/blog.html",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "Novio",
+            "url": "https://ahmershahdev.github.io/novio/"
+        }
+    }
+    </script>
+</body>
+
+</html>

@@ -4,20 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Review your selected courses and proceed to checkout on Novio.">
-    <meta name="robots" content="noindex, nofollow">
+    <meta name="description"
+        content="Learn about Novio's commitment to accessibility. We strive to make tech education available to everyone.">
+    <meta name="keywords" content="Novio accessibility, WCAG, inclusive design, screen reader support">
     <meta name="author" content="Syed Ahmer Shah">
-    <meta property="og:title" content="Cart | Novio">
-    <meta property="og:description" content="Review your selected courses and proceed to checkout on Novio.">
+    <meta property="og:title" content="Accessibility | Novio">
+    <meta property="og:description" content="Novio accessibility commitment and features.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ahmershahdev.github.io/novio/cart.html">
+    <meta property="og:url" content="https://ahmershahdev.github.io/novio/accessibility.html">
     <meta property="og:site_name" content="Novio">
-    <meta property="og:image" content="https://ahmershahdev.github.io/novio/assets/images/og-image.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Cart | Novio">
-    <meta name="twitter:description" content="Review your selected courses and proceed to checkout on Novio.">
-    <link rel="canonical" href="https://ahmershahdev.github.io/novio/cart.html">
-    <title>Cart | NOVIO</title>
+    <meta name="twitter:title" content="Accessibility | Novio">
+    <meta name="twitter:description" content="Novio accessibility commitment and features.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ahmershahdev.github.io/novio/accessibility.html">
+    <title>Accessibility | NOVIO</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -56,7 +57,7 @@
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
                         <li class="nav-item dropdown mega-dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">Explore</a>
                             <div class="dropdown-menu mega-menu">
                                 <div class="container">
@@ -155,51 +156,234 @@
 
     <section class="page-hero">
         <div class="container">
-            <span class="section-badge">Shopping</span>
-            <h1>Your Cart</h1>
-            <p>Review your selected courses before checkout</p>
+            <span class="section-badge">Inclusive by Design</span>
+            <h1>Accessibility at Novio</h1>
+            <p>We believe education should be accessible to everyone, regardless of ability. Here's how we make that
+                happen.</p>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                    <li class="breadcrumb-item active" aria-current="page">Accessibility</li>
                 </ol>
             </nav>
         </div>
     </section>
 
-    <section class="py-5" id="cartPage">
+    <section class="bg-white-section">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-8">
-                    <div id="cartItems">
-                        </div>
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="section-badge">Our Commitment</span>
+                    <h2 class="mt-3">Education Without Barriers</h2>
+                    <p class="text-muted">At Novio, accessibility isn't an afterthought â€” it's a core principle. We are
+                        committed to ensuring that our platform, courses, and content are accessible to all learners,
+                        including those with visual, auditory, motor, or cognitive disabilities.</p>
+                    <p class="text-muted">We strive to conform to the <strong>Web Content Accessibility Guidelines
+                            (WCAG) 2.1 Level AA</strong> standards. These guidelines explain how to make web content
+                        more accessible for people with disabilities and more user-friendly for everyone.</p>
+                    <p class="text-muted">Our accessibility efforts are ongoing. We regularly audit our platform, train
+                        our team, and iterate on feedback from our community to ensure continuous improvement.</p>
                 </div>
-                <div class="col-lg-4">
-                    <div class="cart-summary d-none" id="cartSummary">
-                        <h5>Order Summary</h5>
-                        <div class="summary-row">
-                            <span>Courses</span>
-                            <span id="cartCount">0</span>
-                        </div>
-                        <div class="summary-row">
-                            <span>Subtotal</span>
-                            <span id="cartSubtotal">$0.00</span>
-                        </div>
-                        <div class="summary-row">
-                            <span>Discount</span>
-                            <span class="text-success">-$0.00</span>
-                        </div>
-                        <div class="summary-row total">
-                            <span>Total</span>
-                            <span id="cartTotal">$0.00</span>
-                        </div>
-                        <a href="payment.html" class="btn btn-primary w-100 btn-lg mt-3">
-                            Proceed to Checkout <i class="bi bi-arrow-right ms-2"></i>
-                        </a>
-                        <a href="courses.html" class="btn btn-outline-primary w-100 mt-2">Continue Browsing</a>
+                <div class="col-lg-6">
+                    <div class="card p-4" style="background:var(--primary-light);">
+                        <h5 class="mb-3"><i class="bi bi-award" style="color:var(--primary);"></i> Standards We Follow
+                        </h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> WCAG 2.1 Level AA
+                                conformance target</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Section 508 of
+                                the Rehabilitation Act</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> EN 301 549
+                                (European standard)</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> ADA Title III
+                                compliance</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> ARIA Authoring Practices Guide
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-badge">Built for Everyone</span>
+                <h2 class="mt-3">Accessibility Features</h2>
+                <p class="text-muted mx-auto" style="max-width:600px;">Here's what we've implemented across the platform
+                    to ensure an inclusive experience.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-4 h-100 text-center">
+                        <i class="bi bi-keyboard display-4 mb-3" style="color:var(--primary);"></i>
+                        <h5>Keyboard Navigation</h5>
+                        <p class="text-muted">Every interactive element â€” buttons, links, menus, forms, and modals â€” is
+                            fully navigable using only a keyboard. Tab, Enter, Escape, and arrow keys work as expected.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-4 h-100 text-center">
+                        <i class="bi bi-chat-left-text display-4 mb-3" style="color:var(--primary);"></i>
+                        <h5>Screen Reader Support</h5>
+                        <p class="text-muted">Our pages use semantic HTML5 elements and ARIA labels so screen readers
+                            like NVDA, JAWS, and VoiceOver can accurately convey page structure and content.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-4 h-100 text-center">
+                        <i class="bi bi-palette2 display-4 mb-3" style="color:var(--primary);"></i>
+                        <h5>Color Contrast</h5>
+                        <p class="text-muted">All text and interactive elements meet or exceed WCAG 2.1 AA contrast
+                            ratios (4.5:1 for normal text, 3:1 for large text) to ensure readability in all conditions.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-4 h-100 text-center">
+                        <i class="bi bi-image display-4 mb-3" style="color:var(--primary);"></i>
+                        <h5>Alt Text & Descriptions</h5>
+                        <p class="text-muted">All meaningful images include descriptive alternative text. Decorative
+                            images are hidden from assistive technology to reduce unnecessary noise.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-4 h-100 text-center">
+                        <i class="bi bi-phone display-4 mb-3" style="color:var(--primary);"></i>
+                        <h5>Responsive Design</h5>
+                        <p class="text-muted">Content adapts to all screen sizes and works at 200% zoom without
+                            horizontal scrolling. Touch targets meet the recommended 44px minimum size.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-4 h-100 text-center">
+                        <i class="bi bi-eye display-4 mb-3" style="color:var(--primary);"></i>
+                        <h5>Focus Indicators</h5>
+                        <p class="text-muted">Visible focus rings help keyboard and switch-device users track their
+                            position on the page. Focus order follows a logical top-to-bottom, left-to-right sequence.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-4 h-100 text-center">
+                        <i class="bi bi-badge-cc display-4 mb-3" style="color:var(--primary);"></i>
+                        <h5>Closed Captions</h5>
+                        <p class="text-muted">Video content includes accurate closed captions. We're working toward
+                            providing transcripts for all audio and video course materials.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-4 h-100 text-center">
+                        <i class="bi bi-type display-4 mb-3" style="color:var(--primary);"></i>
+                        <h5>Readable Typography</h5>
+                        <p class="text-muted">We use Inter, a highly legible typeface, with appropriate line heights and
+                            font sizes. Users can resize text up to 200% without loss of functionality.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-4 h-100 text-center">
+                        <i class="bi bi-exclamation-triangle display-4 mb-3" style="color:var(--primary);"></i>
+                        <h5>Error Identification</h5>
+                        <p class="text-muted">Form errors are clearly identified with text descriptions and visual cues
+                            â€” not relying solely on color â€” so all users can understand and correct mistakes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-badge">Compatibility</span>
+                <h2 class="mt-3">Tested With Assistive Technology</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card p-4 text-center h-100">
+                        <h5>NVDA</h5>
+                        <p class="text-muted">Windows screen reader â€” tested with Firefox and Chrome</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card p-4 text-center h-100">
+                        <h5>JAWS</h5>
+                        <p class="text-muted">Professional screen reader â€” tested with Chrome and Edge</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card p-4 text-center h-100">
+                        <h5>VoiceOver</h5>
+                        <p class="text-muted">macOS and iOS native screen reader â€” tested with Safari</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card p-4 text-center h-100">
+                        <h5>TalkBack</h5>
+                        <p class="text-muted">Android screen reader â€” tested with Chrome for Android</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <span class="section-badge">Transparency</span>
+                    <h2 class="mt-3">Known Limitations</h2>
+                    <p class="text-muted">While we strive for full conformance, some areas are still being improved:</p>
+                    <ul class="text-muted">
+                        <li class="mb-2">Some older course videos may not yet have closed captions â€” we're retroactively
+                            adding them on a rolling schedule.</li>
+                        <li class="mb-2">Third-party embedded tools (e.g., code playgrounds) may not fully meet WCAG
+                            standards. We work with vendors to improve compatibility.</li>
+                        <li class="mb-2">Complex interactive data visualizations in certain data science courses are
+                            being rebuilt with accessible alternatives.</li>
+                        <li>PDF certificates are being updated to include proper tagging for screen readers.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card p-4" style="background:var(--primary-light);">
+                        <h5><i class="bi bi-calendar-check" style="color:var(--primary);"></i> Our Roadmap</h5>
+                        <div class="mt-3">
+                            <div class="d-flex mb-3">
+                                <div class="me-3"><span class="badge bg-success">Done</span></div>
+                                <div>WCAG 2.1 AA audit completed for all core pages</div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="me-3"><span class="badge bg-success">Done</span></div>
+                                <div>Keyboard navigation across entire platform</div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="me-3"><span class="badge bg-warning text-dark">In Progress</span></div>
+                                <div>Closed captions for all video courses</div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="me-3"><span class="badge bg-warning text-dark">In Progress</span></div>
+                                <div>Accessible code playground alternatives</div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="me-3"><span class="badge bg-secondary">Planned</span></div>
+                                <div>WCAG 2.2 AAA conformance for key pages</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Help Us Improve</h2>
+            <p>Encountered a barrier? We want to hear from you. Your feedback helps us make Novio better for everyone.
+            </p>
+            <a href="contact.html" class="btn btn-lg">Report an Accessibility Issue <i
+                    class="bi bi-arrow-right ms-2"></i></a>
         </div>
     </section>
 
@@ -274,8 +458,6 @@
         </div>
     </footer>
 
-    <button class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
-
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/data.js"></script>
@@ -293,9 +475,9 @@
     {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Shopping Cart",
-        "description": "Review your selected courses.",
-        "url": "https://ahmershahdev.github.io/novio/cart.html",
+        "name": "Accessibility",
+        "description": "Novio accessibility commitment and features.",
+        "url": "https://ahmershahdev.github.io/novio/accessibility.html",
         "isPartOf": {
             "@type": "WebSite",
             "name": "Novio",

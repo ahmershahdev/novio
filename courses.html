@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,43 +8,117 @@
         content="Browse all Novio tech courses. Filter by category, level, and price. Learn web development, data science, AI, and more.">
     <meta name="keywords"
         content="online courses, tech courses, programming courses, web development course, data science course">
-    <meta name="author" content="Novio">
+    <meta name="author" content="Syed Ahmer Shah">
     <meta property="og:title" content="Browse Courses | Novio">
     <meta property="og:description" content="Explore our library of premium tech courses taught by industry experts.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ahmershahdev.github.io/novio/courses.html">
+    <meta property="og:site_name" content="Novio">
+    <meta property="og:image" content="https://ahmershahdev.github.io/novio/assets/images/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Browse Courses | Novio">
+    <meta name="twitter:description" content="Explore our library of premium tech courses taught by industry experts.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://novio.com/courses.html">
-    <title>Browse Courses | Novio</title>
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    <link rel="canonical" href="https://ahmershahdev.github.io/novio/courses.html">
+    <title>Browse Courses | NOVIO</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="assets/css/courses.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
 
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Novio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas"
+            <a class="navbar-brand-logo" href="index.html">
+                <img src="assets/images/logo/novio-logo.png" alt="Novio" class="logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav" aria-controls="mobileNav"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title">Novio</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav ms-auto me-3">
+            <div class="collapse navbar-collapse" id="mobileNav"><div class="navbar-inner">
+                    <div class="navbar-search">
+                        <i class="bi bi-search search-icon"></i>
+                        <input type="text" class="search-input" placeholder="Search courses...">
+                        <div class="nav-search-suggestions"></div>
+                    </div>
+                    <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link active" href="courses.html">Courses</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item dropdown mega-dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Explore</a>
+                            <div class="dropdown-menu mega-menu">
+                                <div class="container">
+                                    <div class="row g-4 p-3">
+                                        <div class="col-lg-3 col-md-6">
+                                            <h6 class="mega-menu-title"><i class="bi bi-fire"></i> Popular Categories
+                                            </h6>
+                                            <ul class="mega-menu-list">
+                                                <li><a href="courses.html"><i class="bi bi-code-slash"></i> Web
+                                                        Development</a></li>
+                                                <li><a href="courses.html"><i class="bi bi-graph-up"></i> Data
+                                                        Science</a></li>
+                                                <li><a href="courses.html"><i class="bi bi-robot"></i> Artificial
+                                                        Intelligence</a></li>
+                                                <li><a href="courses.html"><i class="bi bi-shield-lock"></i>
+                                                        Cybersecurity</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <h6 class="mega-menu-title"><i class="bi bi-signpost-split"></i> Learning
+                                                Paths</h6>
+                                            <ul class="mega-menu-list">
+                                                <li><a href="courses.html"><i class="bi bi-cloud"></i> Cloud
+                                                        Computing</a></li>
+                                                <li><a href="courses.html"><i class="bi bi-phone"></i> Mobile
+                                                        Development</a></li>
+                                                <li><a href="courses.html"><i class="bi bi-palette"></i> UI/UX
+                                                        Design</a></li>
+                                                <li><a href="courses.html"><i class="bi bi-gear"></i> DevOps</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <h6 class="mega-menu-title"><i class="bi bi-building"></i> Company</h6>
+                                            <ul class="mega-menu-list">
+                                                <li><a href="about.html"><i class="bi bi-info-circle"></i> About
+                                                        Novio</a></li>
+                                                <li><a href="contact.html"><i class="bi bi-envelope"></i> Contact Us</a>
+                                                </li>
+                                                <li><a href="careers.html"><i class="bi bi-briefcase"></i> Careers</a>
+                                                </li>
+                                                <li><a href="blog.html"><i class="bi bi-journal-text"></i> Blog</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <h6 class="mega-menu-title"><i class="bi bi-box"></i> Resources</h6>
+                                            <ul class="mega-menu-list">
+                                                <li><a href="novio-plus.html"><i class="bi bi-stars"></i> Novio Plus</a>
+                                                </li>
+                                                <li><a href="catalog.html"><i class="bi bi-grid"></i> Catalog</a></li>
+                                                <li><a href="affiliates.html"><i class="bi bi-people"></i>
+                                                        Affiliates</a></li>
+                                                <li><a href="help-center.html"><i class="bi bi-question-circle"></i>
+                                                        Help Center</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                     <div class="d-flex align-items-center gap-2">
                         <a href="cart.html" class="btn btn-icon position-relative" aria-label="Cart">
@@ -53,16 +127,39 @@
                         </a>
                         <a href="login.html" class="btn btn-outline-primary btn-sm" id="loginBtn">Log In</a>
                         <a href="signup.html" class="btn btn-primary btn-sm" id="signupBtn">Sign Up</a>
-                        <a href="account.html" class="btn btn-icon d-none" id="accountBtn" aria-label="Account">
-                            <i class="bi bi-person-circle"></i>
-                        </a>
+                        <div class="dropdown d-none" id="accountDropdown">
+                            <a href="#" class="btn btn-icon dropdown-toggle" id="accountBtn" data-bs-toggle="dropdown"
+                                aria-expanded="false" aria-label="Account">
+                                <i class="bi bi-person-circle"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end account-dropdown">
+                                <li><a class="dropdown-item" href="account.html"><i class="bi bi-person"></i>
+                                        Profile</a></li>
+                                <li><a class="dropdown-item" href="my-courses.html"><i class="bi bi-book"></i> My
+                                        Courses</a></li>
+                                <li><a class="dropdown-item" href="purchases.html"><i class="bi bi-bag"></i> My
+                                        Purchases</a></li>
+                                <li><a class="dropdown-item" href="achievements.html"><i class="bi bi-trophy"></i>
+                                        Accomplishments</a></li>
+                                <li><a class="dropdown-item" href="settings.html"><i class="bi bi-gear"></i>
+                                        Settings</a></li>
+                                <li><a class="dropdown-item" href="updates.html"><i class="bi bi-bell"></i>
+                                        Updates</a></li>
+                                <li><a class="dropdown-item" href="help-center.html"><i
+                                            class="bi bi-question-circle"></i> Help Center</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-danger" href="#" id="logoutBtn"><i
+                                            class="bi bi-box-arrow-right"></i> Logout</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Page Hero -->
     <section class="page-hero">
         <div class="container">
             <span class="section-badge">Learn & Grow</span>
@@ -77,14 +174,16 @@
         </div>
     </section>
 
-    <!-- Courses Section -->
     <section class="bg-white-section">
         <div class="container">
             <div class="row g-4">
-                <!-- Sidebar Filters -->
                 <div class="col-lg-3">
                     <div class="filter-sidebar">
-                        <!-- Search -->
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <h6 class="mb-0 fw-bold">Filters</h6>
+                            <button class="btn btn-link btn-sm text-decoration-none p-0" id="clearFilters">Clear
+                                All</button>
+                        </div>
                         <div class="filter-group">
                             <h6>Search</h6>
                             <div class="search-input-wrapper">
@@ -94,7 +193,6 @@
                             </div>
                         </div>
 
-                        <!-- Category Filter -->
                         <div class="filter-group">
                             <h6>Category</h6>
                             <div class="form-check">
@@ -139,7 +237,6 @@
                             </div>
                         </div>
 
-                        <!-- Level Filter -->
                         <div class="filter-group">
                             <h6>Level</h6>
                             <div class="form-check">
@@ -158,10 +255,42 @@
                                 <label class="form-check-label" for="lvlAdv">Advanced</label>
                             </div>
                         </div>
+
+                        <div class="filter-group">
+                            <h6>Price</h6>
+                            <div class="form-check">
+                                <input class="form-check-input filter-check filter-price" type="checkbox" value="free"
+                                    id="priceFree">
+                                <label class="form-check-label" for="priceFree">Free</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-check filter-price" type="checkbox" value="paid"
+                                    id="pricePaid">
+                                <label class="form-check-label" for="pricePaid">Paid</label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h6>Duration</h6>
+                            <div class="form-check">
+                                <input class="form-check-input filter-check filter-duration" type="checkbox"
+                                    value="short" id="durShort">
+                                <label class="form-check-label" for="durShort">Under 5 hours</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-check filter-duration" type="checkbox"
+                                    value="medium" id="durMed">
+                                <label class="form-check-label" for="durMed">5-15 hours</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-check filter-duration" type="checkbox"
+                                    value="long" id="durLong">
+                                <label class="form-check-label" for="durLong">15+ hours</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Course Grid -->
                 <div class="col-lg-9">
                     <div class="courses-toolbar">
                         <span class="result-count">9 courses found</span>
@@ -174,14 +303,12 @@
                         </select>
                     </div>
                     <div class="row" id="allCourses">
-                        <!-- Rendered by JS -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
     <section class="cta-section">
         <div class="container">
             <h2>Can't Find What You're Looking For?</h2>
@@ -190,39 +317,67 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <h5>Novio</h5>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo/novio-logo.png" alt="Novio" class="logo-img">
+                    </div>
                     <p>Empowering learners worldwide with premium tech courses from industry experts.</p>
                     <div class="social-links">
-                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="https://facebook.com/ahmershah29" aria-label="Facebook" target="_blank"
+                            rel="noopener"><i class="bi bi-facebook"></i></a>
+                        <a href="https://x.com/ahmershah29" aria-label="X" target="_blank" rel="noopener"><i
+                                class="bi bi-twitter-x"></i></a>
+                        <a href="https://linkedin.com/in/syedahmershah" aria-label="LinkedIn" target="_blank"
+                            rel="noopener"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/ahmershahdev" aria-label="GitHub" target="_blank" rel="noopener"><i
+                                class="bi bi-github"></i></a>
+                        <a href="https://youtube.com/@ahmershahdev" aria-label="YouTube" target="_blank"
+                            rel="noopener"><i class="bi bi-youtube"></i></a>
+                        <a href="https://ahmershah.dev/" aria-label="Portfolio" target="_blank" rel="noopener"><i
+                                class="bi bi-globe2"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6">
-                    <h6>Platform</h6>
+                    <h6>Novio</h6>
                     <ul>
-                        <li><a href="courses.html">Courses</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="leadership.html">Leadership</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="catalog.html">Catalog</a></li>
+                        <li><a href="novio-plus.html">Novio Plus</a></li>
+                        <li><a href="courses.html">Professional Certificates</a></li>
+                        <li><a href="courses.html">MasterTrack&reg; Certificates</a></li>
+                        <li><a href="courses.html">Degrees</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6">
-                    <h6>Support</h6>
+                    <h6>Community</h6>
                     <ul>
-                        <li><a href="contact.html">Help Center</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="learners.html">Learners</a></li>
+                        <li><a href="partners.html">Partners</a></li>
+                        <li><a href="beta-testers.html">Beta Testers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="podcast.html">The Novio Podcast</a></li>
+                        <li><a href="tech-blog.html">Tech Blog</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-2 col-md-6">
+                    <h6>More</h6>
+                    <ul>
+                        <li><a href="press.html">Press</a></li>
+                        <li><a href="investors.html">Investors</a></li>
+                        <li><a href="terms-of-service.html">Terms</a></li>
+                        <li><a href="privacy-policy.html">Privacy</a></li>
+                        <li><a href="help-center.html">Help</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="affiliates.html">Affiliates</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
                     <h6>Newsletter</h6>
                     <p>Stay updated with new courses and exclusive offers.</p>
                     <form class="newsletter-form">
@@ -233,8 +388,8 @@
             </div>
             <hr>
             <div class="footer-bottom">
-                <p>&copy; 2026 Novio. All rights reserved.</p>
-                <p>Made with <i class="bi bi-heart-fill" style="color:#EF4444;"></i> for learners everywhere</p>
+                <p>&copy; 2026 Novio Inc. All rights reserved.</p>
+                <p>Made by Syed Ahmer Shah</p>
             </div>
         </div>
     </footer>
@@ -243,7 +398,31 @@
 
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/ui.js"></script>
+    <script src="assets/js/courses.js"></script>
+    <script src="assets/js/course-detail.js"></script>
+    <script src="assets/js/cart-page.js"></script>
+    <script src="assets/js/auth-forms.js"></script>
+    <script src="assets/js/account.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/nav-search.js"></script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Browse Courses",
+        "description": "Explore premium tech courses on Novio.",
+        "url": "https://ahmershahdev.github.io/novio/courses.html",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "Novio",
+            "url": "https://ahmershahdev.github.io/novio/"
+        }
+    }
+    </script>
 </body>
 
 </html>
