@@ -1,82 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://ahmershahdev.github.io/novio/</loc>
+        <loc>https://novio.ahmershah.dev/</loc>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://ahmershahdev.github.io/novio/courses.html</loc>
+        <loc>https://novio.ahmershah.dev/courses.html</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://ahmershahdev.github.io/novio/course-detail.html</loc>
+        <loc>https://novio.ahmershah.dev/course-detail.html</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://ahmershahdev.github.io/novio/about.html</loc>
+        <loc>https://novio.ahmershah.dev/about.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://ahmershahdev.github.io/novio/contact.html</loc>
+        <loc>https://novio.ahmershah.dev/contact.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://ahmershahdev.github.io/novio/blog.html</loc>
+        <loc>https://novio.ahmershah.dev/blog.html</loc>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://ahmershahdev.github.io/novio/careers.html</loc>
+        <loc>https://novio.ahmershah.dev/careers.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://ahmershahdev.github.io/novio/accessibility.html</loc>
+        <loc>https://novio.ahmershah.dev/accessibility.html</loc>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
     <url>
-        <loc>https://ahmershahdev.github.io/novio/affiliates.html</loc>
+        <loc>https://novio.ahmershah.dev/affiliates.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://ahmershahdev.github.io/novio/login.html</loc>
+        <loc>https://novio.ahmershah.dev/login.html</loc>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
     <url>
-        <loc>https://ahmershahdev.github.io/novio/signup.html</loc>
+        <loc>https://novio.ahmershah.dev/signup.html</loc>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
     <url>
-        <loc>https://ahmershahdev.github.io/novio/privacy-policy.html</loc>
+        <loc>https://novio.ahmershah.dev/privacy-policy.html</loc>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
     <url>
-        <loc>https://ahmershahdev.github.io/novio/terms-of-service.html</loc>
+        <loc>https://novio.ahmershah.dev/terms-of-service.html</loc>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
     <url>
-        <loc>https://ahmershahdev.github.io/novio/refund-policy.html</loc>
+        <loc>https://novio.ahmershah.dev/refund-policy.html</loc>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
     <url>
-        <loc>https://ahmershahdev.github.io/novio/certificate.html</loc>
+        <loc>https://novio.ahmershah.dev/certificate.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://ahmershahdev.github.io/novio/verify-certificate.html</loc>
+        <loc>https://novio.ahmershah.dev/verify-certificate.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>

@@ -34,16 +34,17 @@ img {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: black;
 }
 
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(180deg, var(--primary) 0%, var(--accent) 100%);
   border-radius: 10px;
+  cursor: grab;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -54,9 +55,12 @@ img {
   );
 }
 
-html {
-  scrollbar-width: thin;
-  scrollbar-color: var(--primary) transparent;
+@media (hover: none) {
+  html {
+    scrollbar-width: thin !important;
+    scrollbar-color: purple #050508 !important;
+    scroll-behavior: smooth; 
+  }
 }
 
 h1,

@@ -11,7 +11,7 @@ User-agent: Bingbot
 Allow: /
 Disallow: /assets/js/
 
-Sitemap: https://ahmershahdev.github.io/novio/sitemap.xml
+Sitemap: https://novio.ahmershah.dev/sitemap.xml
 
 # Novio - Premium Online Tech Courses
-# https://ahmershahdev.github.io/novio/
+# https://novio.ahmershah.dev/

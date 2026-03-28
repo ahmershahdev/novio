@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://ahmershahdev.github.io/novio/">Live Demo</a> &bull;
+  <a href="https://novio.ahmershah.dev/">Live Demo</a> &bull;
   <a href="#features">Features</a> &bull;
   <a href="#tech-stack">Tech Stack</a> &bull;
   <a href="#pages">Pages</a> &bull;
